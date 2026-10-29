@@ -1,7 +1,3 @@
-The issue is that your Markdown tables contain excessive spacing and escaped characters. Below is the same README content with readable column explanations using bullet points instead of tables, while keeping the project details, results, commands, and model explanations.
-
-You can replace your current `README.md` with this version.
-
 # Household Electricity Anomaly Detection Using Machine Learning and LSTM
 
 ## 1. About the Project
@@ -368,4 +364,3 @@ The main objective is to identify electricity readings that deserve further inve
 4. TensorFlow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
 5. Scikit-learn: [https://scikit-learn.org/](https://scikit-learn.org/)
 
-Add a project overview at the topClarify the anomaly-score direction
