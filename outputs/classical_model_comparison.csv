@@ -1,0 +1,3 @@
+method,test_rows,flagged_rows,flagged_percent
+Statistical baseline,27337,82,0.29995976149540915
+Isolation Forest,27337,93,0.3401982660862567

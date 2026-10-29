@@ -1,0 +1,3 @@
+model,test_rows,flagged_rows,flagged_percent
+LSTM prediction,27337,155,0.5669971101437612
+LSTM autoencoder,27337,139,0.5084683761934374

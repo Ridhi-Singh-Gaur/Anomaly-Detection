@@ -1,0 +1,9 @@
+{
+  "window_15min_steps": 4,
+  "window_minutes": 60,
+  "train_fraction": 0.8,
+  "threshold_quantile": 0.99,
+  "prediction_threshold_scaled": 0.24128494469318695,
+  "autoencoder_threshold": 9.74484064417795e-06,
+  "note": "Flags are anomaly candidates; dataset has no complete ground-truth anomaly labels."
+}
