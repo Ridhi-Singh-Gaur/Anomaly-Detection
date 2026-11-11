@@ -1,0 +1,64 @@
+2026-11-07 15:55:06,796 [INFO] ============================================================================
+2026-11-07 15:55:06,797 [INFO] MEMBER 4 - PHASE 3: TREESHAP ENSEMBLE STABILITY ANALYSIS
+2026-11-07 15:55:06,797 [INFO] Experiment ID: EXP-PHASE3-SHAP-03
+2026-11-07 15:55:06,798 [INFO] ============================================================================
+2026-11-07 15:55:06,909 [INFO] Loaded Isolation Forest model: 200 trees, 16 features
+2026-11-07 15:55:07,972 [INFO] Evaluation sample assembled: 433 instances (333 candidates + 100 normal)
+2026-11-07 15:55:07,984 [INFO] 
+--- Evaluating Subset K=25 trees ---
+2026-11-07 15:55:08,623 [INFO]   Base value E[h(x)]: 11.4202
+2026-11-07 15:55:08,623 [INFO]   Additivity Max Error: 5.3291e-15 | Mean Error: 1.3538e-15
+2026-11-07 15:55:08,624 [INFO]   Top 5 Features: ['Global_active_power', 'rolling_std_4', 'Global_intensity', 'consumption_change', 'Sub_metering_1']
+2026-11-07 15:55:08,907 [INFO]   Saved per-configuration CSV (433 rows): shap_values_trees_025.csv
+2026-11-07 15:55:08,908 [INFO] 
+--- Evaluating Subset K=50 trees ---
+2026-11-07 15:55:11,361 [INFO]   Base value E[h(x)]: 11.8274
+2026-11-07 15:55:11,361 [INFO]   Additivity Max Error: 7.1054e-15 | Mean Error: 1.6943e-15
+2026-11-07 15:55:11,362 [INFO]   Top 5 Features: ['Global_active_power', 'Global_intensity', 'Sub_metering_2', 'consumption_change', 'rolling_std_4']
+2026-11-07 15:55:11,983 [INFO]   Saved per-configuration CSV (433 rows): shap_values_trees_050.csv
+2026-11-07 15:55:11,983 [INFO] 
+--- Evaluating Subset K=100 trees ---
+2026-11-07 15:55:16,611 [INFO]   Base value E[h(x)]: 11.8514
+2026-11-07 15:55:16,611 [INFO]   Additivity Max Error: 1.0658e-14 | Mean Error: 2.4943e-15
+2026-11-07 15:55:16,613 [INFO]   Top 5 Features: ['rolling_std_4', 'Sub_metering_2', 'Global_intensity', 'Global_active_power', 'Sub_metering_1']
+2026-11-07 15:55:16,783 [INFO]   Saved per-configuration CSV (433 rows): shap_values_trees_100.csv
+2026-11-07 15:55:16,783 [INFO] 
+--- Evaluating Subset K=150 trees ---
+2026-11-07 15:55:23,190 [INFO]   Base value E[h(x)]: 11.9620
+2026-11-07 15:55:23,190 [INFO]   Additivity Max Error: 1.5099e-14 | Mean Error: 3.7148e-15
+2026-11-07 15:55:23,192 [INFO]   Top 5 Features: ['Sub_metering_2', 'rolling_std_4', 'Global_intensity', 'Sub_metering_1', 'Global_active_power']
+2026-11-07 15:55:23,396 [INFO]   Saved per-configuration CSV (433 rows): shap_values_trees_150.csv
+2026-11-07 15:55:23,396 [INFO] 
+--- Evaluating Subset K=200 trees ---
+2026-11-07 15:55:31,846 [INFO]   Base value E[h(x)]: 11.9495
+2026-11-07 15:55:31,847 [INFO]   Additivity Max Error: 2.3981e-14 | Mean Error: 5.3886e-15
+2026-11-07 15:55:31,848 [INFO]   Top 5 Features: ['Sub_metering_2', 'rolling_std_4', 'Global_intensity', 'Sub_metering_1', 'Global_active_power']
+2026-11-07 15:55:32,045 [INFO]   Saved per-configuration CSV (433 rows): shap_values_trees_200.csv
+2026-11-07 15:55:32,046 [INFO] 
+Building combined_feature_stability.csv...
+2026-11-07 15:55:32,071 [INFO] Saved feature stability CSV (16 features): combined_feature_stability.csv
+2026-11-07 15:55:32,072 [INFO] 
+=== GLOBAL ENSEMBLE CONVERGENCE METRICS ===
+2026-11-07 15:55:32,077 [INFO] K= 25 | Spearman Rho=0.8706 | Cosine Sim=0.956041 | Top5 Overlap=80% (Jaccard=0.67)
+2026-11-07 15:55:32,083 [INFO] K= 50 | Spearman Rho=0.9176 | Cosine Sim=0.973453 | Top5 Overlap=80% (Jaccard=0.67)
+2026-11-07 15:55:32,087 [INFO] K=100 | Spearman Rho=0.9882 | Cosine Sim=0.994726 | Top5 Overlap=100% (Jaccard=1.00)
+2026-11-07 15:55:32,094 [INFO] K=150 | Spearman Rho=0.9971 | Cosine Sim=0.998334 | Top5 Overlap=100% (Jaccard=1.00)
+2026-11-07 15:55:32,099 [INFO] K=200 | Spearman Rho=1.0000 | Cosine Sim=1.000000 | Top5 Overlap=100% (Jaccard=1.00)
+2026-11-07 15:55:32,107 [INFO] 
+Evaluating per-sample attribution similarities against K=200 reference...
+2026-11-07 15:55:40,721 [INFO] Saved per-sample comparison CSV (433 rows): per_sample_attribution_comparison.csv
+2026-11-07 15:55:40,721 [INFO] 
+Per-Sample Cosine Similarity Distributions against 200-tree baseline:
+2026-11-07 15:55:40,728 [INFO]   K= 25: Min=0.4905, Q25=0.8850, Median=0.9224, Mean=0.9086, Max=0.9889
+2026-11-07 15:55:40,732 [INFO]   K= 50: Min=0.6816, Q25=0.9375, Median=0.9593, Mean=0.9480, Max=0.9952
+2026-11-07 15:55:40,738 [INFO]   K=100: Min=0.8957, Q25=0.9844, Median=0.9903, Mean=0.9856, Max=0.9990
+2026-11-07 15:55:40,742 [INFO]   K=150: Min=0.9805, Q25=0.9956, Median=0.9972, Mean=0.9961, Max=0.9997
+2026-11-07 15:55:40,744 [INFO] 
+Generating publication figures...
+2026-11-07 15:55:41,023 [WARNING] findfont: Failed to find font weight semibold for DejaVu Sans, now using 700.
+2026-11-07 15:55:43,433 [INFO] Saved Figure 1: feature_ranking_stability.png
+2026-11-07 15:55:48,932 [INFO] Saved Figure 2: ensemble_convergence_metrics.png
+2026-11-07 15:55:48,932 [INFO] 
+============================================================================
+2026-11-07 15:55:48,932 [INFO] EXP-PHASE3-SHAP-03 STABILITY EXPERIMENT COMPLETED SUCCESSFULLY
+2026-11-07 15:55:48,932 [INFO] ============================================================================

@@ -1,0 +1,52 @@
+2026-11-07 15:04:47,154 [INFO] ============================================================================
+2026-11-07 15:04:47,155 [INFO] MEMBER 4 - PHASE 3: CONTEXT MATCHING SENSITIVITY EXPERIMENT
+2026-11-07 15:04:47,155 [INFO] Experiment ID: EXP-PHASE3-CONTEXT-02
+2026-11-07 15:04:47,156 [INFO] ============================================================================
+2026-11-07 15:04:48,326 [INFO] Loaded train partition: 109,347 rows | Test partition: 27,337 rows
+2026-11-07 15:04:48,352 [INFO] Train temporal upper bound: 2010-02-05 05:15:00
+2026-11-07 15:04:48,353 [INFO] Test temporal lower bound:  2010-02-05 05:30:00
+2026-11-07 15:04:48,363 [INFO] Global training stats: Median=0.6548 kW, Mean=1.1105 kW, Std=1.0255 kW
+2026-11-07 15:04:48,410 [INFO] Aligned 333 candidate anomaly readings.
+2026-11-07 15:04:48,411 [INFO] 
+--- Running Config 1: Hour +/-0h, Season OFF ---
+2026-11-07 15:04:50,982 [INFO]   Saved config1_h0_season_off.csv (333 records)
+2026-11-07 15:04:50,983 [INFO]   Cohort: Min=1292, Median=3260, Max=3268, Fallbacks=0
+2026-11-07 15:04:50,984 [INFO]   Deviation: Mean=2.2798 kW, Median=2.4633 kW, Max=6.1850 kW
+2026-11-07 15:04:50,985 [INFO]   Z-score: Mean=1.9185, Median=2.0887, Max=6.6524
+2026-11-07 15:04:50,985 [INFO] 
+--- Running Config 2: Hour +/-0h, Season ON ---
+2026-11-07 15:04:55,990 [INFO]   Saved config2_h0_season_on.csv (333 records)
+2026-11-07 15:04:55,991 [INFO]   Cohort: Min=296, Median=780, Max=868, Fallbacks=0
+2026-11-07 15:04:55,993 [INFO]   Deviation: Mean=2.1874 kW, Median=2.3006 kW, Max=5.8673 kW
+2026-11-07 15:04:55,993 [INFO]   Z-score: Mean=1.9929, Median=2.0409, Max=9.6706
+2026-11-07 15:04:55,994 [INFO] 
+--- Running Config 3: Hour +/-1h, Season OFF ---
+2026-11-07 15:04:59,845 [INFO]   Saved config3_h1_season_off.csv (333 records)
+2026-11-07 15:04:59,845 [INFO]   Cohort: Min=3876, Median=9780, Max=9804, Fallbacks=0
+2026-11-07 15:04:59,846 [INFO]   Deviation: Mean=2.2984 kW, Median=2.4894 kW, Max=6.1732 kW
+2026-11-07 15:04:59,846 [INFO]   Z-score: Mean=1.8863, Median=2.0328, Max=6.4079
+2026-11-07 15:04:59,846 [INFO] 
+--- Running Config 4: Hour +/-1h, Season ON (Baseline Twins) ---
+2026-11-07 15:05:01,775 [INFO]   Saved config4_h1_season_on.csv (333 records)
+2026-11-07 15:05:01,775 [INFO]   Cohort: Min=888, Median=2340, Max=2608, Fallbacks=0
+2026-11-07 15:05:01,777 [INFO]   Deviation: Mean=2.2097 kW, Median=2.4051 kW, Max=5.8219 kW
+2026-11-07 15:05:01,777 [INFO]   Z-score: Mean=1.9343, Median=2.0428, Max=9.5650
+2026-11-07 15:05:01,777 [INFO] 
+--- Running Config 5: Hour +/-2h, Season OFF ---
+2026-11-07 15:05:07,130 [INFO]   Saved config5_h2_season_off.csv (333 records)
+2026-11-07 15:05:07,131 [INFO]   Cohort: Min=6460, Median=16300, Max=16337, Fallbacks=0
+2026-11-07 15:05:07,132 [INFO]   Deviation: Mean=2.3260 kW, Median=2.5304 kW, Max=6.2075 kW
+2026-11-07 15:05:07,132 [INFO]   Z-score: Mean=1.8764, Median=2.0611, Max=5.9115
+2026-11-07 15:05:07,134 [INFO] 
+--- Running Config 6: Hour +/-2h, Season ON ---
+2026-11-07 15:05:12,895 [INFO]   Saved config6_h2_season_on.csv (333 records)
+2026-11-07 15:05:12,895 [INFO]   Cohort: Min=1480, Median=3900, Max=4348, Fallbacks=0
+2026-11-07 15:05:12,896 [INFO]   Deviation: Mean=2.2429 kW, Median=2.4261 kW, Max=5.8093 kW
+2026-11-07 15:05:12,897 [INFO]   Z-score: Mean=1.9021, Median=2.0171, Max=6.9301
+2026-11-07 15:05:12,898 [INFO] 
+Building combined_sensitivity_comparison.csv...
+2026-11-07 15:05:14,043 [INFO] Saved combined comparison CSV (333 rows, 60 cols): combined_sensitivity_comparison.csv
+2026-11-07 15:05:14,044 [INFO] 
+============================================================================
+2026-11-07 15:05:14,044 [INFO] EXP-PHASE3-CONTEXT-02 SENSITIVITY EXPERIMENT COMPLETED SUCCESSFULLY
+2026-11-07 15:05:14,044 [INFO] ============================================================================

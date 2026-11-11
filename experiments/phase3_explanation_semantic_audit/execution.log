@@ -1,0 +1,53 @@
+2026-11-07 17:56:46,395 [INFO] ============================================================================
+2026-11-07 17:56:46,396 [INFO] MEMBER 4 - PHASE 3: SEMANTIC & SCIENTIFIC AUDIT OF 333 EXPLANATIONS
+2026-11-07 17:56:46,396 [INFO] Experiment ID: EXP-PHASE3-XAI-06
+2026-11-07 17:56:46,396 [INFO] ============================================================================
+2026-11-07 17:56:46,396 [INFO] 
+[Step 1] Loading existing project artifacts (Read-Only Mode)...
+2026-11-07 17:56:46,397 [INFO]   Safeguard check: Master paper size = 122,229 bytes (Required: exactly 122,229 bytes)
+2026-11-07 17:56:46,410 [INFO]   Loaded explanations.json: 333 explanations
+2026-11-07 17:56:46,458 [INFO]   Loaded contextual_anomalies.csv: 333 rows
+2026-11-07 17:56:46,472 [INFO]   Loaded shap_values_trees_200.csv: 433 rows
+2026-11-07 17:56:46,881 [INFO]   Loaded all 4 model detection result files.
+2026-11-07 17:56:48,023 [INFO]   Loaded data splits: Train = 109,347 rows, Test = 27,337 rows
+2026-11-07 17:56:48,694 [INFO] 
+[Step 2] Executing Multi-Dimensional Audit across all 333 candidate explanations...
+2026-11-07 17:57:01,849 [INFO] 
+[Step 3] Exporting deliverables to experiments/phase3_explanation_semantic_audit/...
+2026-11-07 17:57:01,890 [INFO]   Saved explanation_semantic_audit.csv (333 rows, 12 cols)
+2026-11-07 17:57:01,897 [INFO]   Saved explanation_issue_examples.csv (78 flagged items across 73 unique timestamps)
+2026-11-07 17:57:01,899 [INFO]   Saved explanation_quality_summary.json
+2026-11-07 17:57:01,899 [INFO] 
+============================================================================
+2026-11-07 17:57:01,900 [INFO] AUDIT SUMMARY RESULTS (N = 333 CANDIDATE EXPLANATIONS):
+2026-11-07 17:57:01,900 [INFO] ============================================================================
+2026-11-07 17:57:01,900 [INFO]   Overall Status:
+2026-11-07 17:57:01,900 [INFO]     PASS:           260 (78.08%)
+2026-11-07 17:57:01,900 [INFO]     WARNING:        73 (21.92%)
+2026-11-07 17:57:01,900 [INFO]     FAIL:           0 (0.00%)
+2026-11-07 17:57:01,900 [INFO]     NOT_VERIFIABLE: 0 (0.00%)
+2026-11-07 17:57:01,901 [INFO] 
+  Dimension-Wise Breakdown:
+2026-11-07 17:57:01,901 [INFO]     audit_a_record_completeness     : PASS=333 WARNING=0   FAIL=0  
+2026-11-07 17:57:01,901 [INFO]     audit_b_shap_numerical          : PASS=328 WARNING=5   FAIL=0  
+2026-11-07 17:57:01,901 [INFO]     audit_c_consensus_consistency   : PASS=333 WARNING=0   FAIL=0  
+2026-11-07 17:57:01,901 [INFO]     audit_d_contextual_reference    : PASS=333 WARNING=0   FAIL=0  
+2026-11-07 17:57:01,901 [INFO]     audit_e_scientific_validity     : PASS=260 WARNING=73  FAIL=0  
+2026-11-07 17:57:01,901 [INFO] 
+  Consensus Counts Reconciled:
+2026-11-07 17:57:01,901 [INFO]     1_model_consensus: 242
+2026-11-07 17:57:01,901 [INFO]     2_model_consensus: 50
+2026-11-07 17:57:01,902 [INFO]     3_model_consensus: 37
+2026-11-07 17:57:01,902 [INFO]     4_model_consensus: 4
+2026-11-07 17:57:01,902 [INFO] 
+  Issue Categories Detected:
+2026-11-07 17:57:01,902 [INFO]     unsupported_appliance_attribution           : 0
+2026-11-07 17:57:01,903 [INFO]     unsupported_causal_claim                    : 0
+2026-11-07 17:57:01,903 [INFO]     unsupported_household_behaviour_claim       : 0
+2026-11-07 17:57:01,903 [INFO]     incorrect_circuit_mapping                   : 0
+2026-11-07 17:57:01,903 [INFO]     incorrect_shap_interpretation               : 5
+2026-11-07 17:57:01,904 [INFO]     unsupported_fault_diagnosis                 : 0
+2026-11-07 17:57:01,904 [INFO]     other_scientific_terminology_issue          : 0
+2026-11-07 17:57:01,904 [INFO]     negative_or_negligible_shap_feature_cited   : 5
+2026-11-07 17:57:01,904 [INFO]     unverified_general_circuit_hypothesis       : 73
+2026-11-07 17:57:01,904 [INFO] ============================================================================

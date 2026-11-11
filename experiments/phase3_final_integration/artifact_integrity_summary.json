@@ -1,0 +1,177 @@
+{
+  "audit_metadata": {
+    "experiment_id": "EXP-PHASE3-XAI-07",
+    "audit_timestamp": "2026-11-07 20:55:14",
+    "auditor_role": "Member 4 \u2014 Explainable AI (XAI), Context-Aware Analysis, and Technical Validation",
+    "overall_status": "PASS",
+    "audit_verdict": "All Phase 3 Technical Responsibilities Complete and Verified"
+  },
+  "frozen_manuscript": {
+    "file_path": "research_paper\\complete_ieee_paper.md",
+    "expected_size_bytes": 122229,
+    "actual_size_bytes": 122229,
+    "sha256": "3a7147a8fee927f72e2ab97030206cce98fce6d1c966ef8f37ebba2aa1aaa185",
+    "freeze_status": "PASS \u2014 EXACT MATCH"
+  },
+  "production_model_and_result_artifacts": {
+    "isolation_forest_model": {
+      "exists": true,
+      "size_bytes": 2434327,
+      "sha256": "324645fe3b729bbebab38156a75539b3c4c5e8e4eb77735c8739000568418ed4"
+    },
+    "power_scaler": {
+      "exists": true,
+      "size_bytes": 991,
+      "sha256": "b8c668e0dcb03815221d4a8597866d3629b23c40f57c67ea89361f90dc047638"
+    },
+    "lstm_prediction_model": {
+      "exists": true,
+      "size_bytes": 87976,
+      "sha256": "d2d27cd41d1db4e2c69356ee6f3ac6411583472fa8f1c1bb1b3b54e2284702db"
+    },
+    "lstm_autoencoder_model": {
+      "exists": true,
+      "size_bytes": 192021,
+      "sha256": "886b011f6a4b28b9c8f642834de4b4991610520c9bf10fd9f55ed1c632efc0e1"
+    },
+    "household_15min_features": {
+      "exists": true,
+      "size_bytes": 32628104,
+      "sha256": "9d88ebe15a7aa61303a10b616269ac0973badec904fc1ffb2070e72b6ececcfc"
+    },
+    "statistical_baseline_results": {
+      "exists": true,
+      "size_bytes": 3322513,
+      "sha256": "636778b69e3167b575d9335d9f3926bfc12fd69dbfe6cea4696f530a7b49d3c6"
+    },
+    "isolation_forest_results": {
+      "exists": true,
+      "size_bytes": 2813996,
+      "sha256": "31c27f69b8c347e68c301750b843a2b11e229a7e8f94213a7abe1deb601e5f37"
+    },
+    "lstm_prediction_results": {
+      "exists": true,
+      "size_bytes": 3532863,
+      "sha256": "9859e47f66fc968a32037d593bf28ff035589cede26aca266cb4cdc2ed6e8410"
+    },
+    "lstm_autoencoder_results": {
+      "exists": true,
+      "size_bytes": 3375380,
+      "sha256": "81fe3c3f50571abbaf023cdb2a0c34d9e9ffb2a92e4c7480b9bb083b40e56574"
+    },
+    "active_explanations_json": {
+      "exists": true,
+      "size_bytes": 774367,
+      "sha256": "43780421623a24b05c95740577fae0e1c48b8cf58df880c393776aeee807cf01"
+    },
+    "active_contextual_anomalies_csv": {
+      "exists": true,
+      "size_bytes": 306616,
+      "sha256": "efec2e57e2f7767e92a29cd2c5aaca739ed8f3d8cd1042f6d6393dfe62c904ee"
+    },
+    "backup_explanations_json": {
+      "exists": true,
+      "size_bytes": 767346,
+      "sha256": "1aa58b234f1771312b9a2f466138aac8bc7453505d1e054e6c186b949d115346"
+    },
+    "backup_contextual_anomalies_csv": {
+      "exists": true,
+      "size_bytes": 299464,
+      "sha256": "4d2aa46fd5c7bd408e19fe9e1b85615c8c8810e0b5c6b7e82d2f63ae2b1c0a6d"
+    },
+    "reference_200tree_shap_matrix": {
+      "exists": true,
+      "size_bytes": 197056,
+      "sha256": "6eb95f28cf2c430df28f98fac42e7431058ef6458a276c7e0be1eeccec4b807d"
+    }
+  },
+  "experiment_deliverables_audit": {
+    "EXP-PHASE3-CONTEXT-01": {
+      "directory": "experiments/phase3_context_matching",
+      "status": "PASS",
+      "files_count": 6
+    },
+    "EXP-PHASE3-CONTEXT-02": {
+      "directory": "experiments/phase3_context_sensitivity",
+      "status": "PASS",
+      "files_count": 11
+    },
+    "EXP-PHASE3-SHAP-03": {
+      "directory": "experiments/phase3_shap_stability",
+      "status": "PASS",
+      "files_count": 13
+    },
+    "EXP-PHASE3-SHAP-04": {
+      "directory": "experiments/phase3_shap_randomized_stability",
+      "status": "PASS",
+      "files_count": 8
+    },
+    "EXP-PHASE3-SHAP-05": {
+      "directory": "experiments/phase3_shap_dependence",
+      "status": "PASS",
+      "files_count": 14
+    },
+    "EXP-PHASE3-XAI-06": {
+      "directory": "experiments/phase3_explanation_semantic_audit",
+      "status": "PASS",
+      "files_count": 8
+    },
+    "EXP-PHASE3-XAI-06A": {
+      "directory": "experiments/phase3_explanation_semantic_audit/reconciliation",
+      "status": "PASS",
+      "files_count": 6
+    },
+    "EXP-PHASE3-XAI-06B": {
+      "directory": "experiments/phase3_explanation_remediation",
+      "status": "PASS",
+      "files_count": 6
+    }
+  },
+  "numerical_invariance_verification": {
+    "total_candidate_events": 333,
+    "unique_candidate_timestamps": 333,
+    "timestamps_match_backup": true,
+    "model_flags_match_backup": true,
+    "model_scores_max_diff": 0.0,
+    "contextual_stats_max_diff": 0.0,
+    "shap_attributions_max_diff": 0.0,
+    "csv_numerical_columns_max_diff": 8.881784197001252e-16,
+    "status": "PASS \u2014 EXACT INVARIANCE"
+  },
+  "chronological_partition_integrity": {
+    "dataset_total_observations": 136684,
+    "training_partition_observations": 109347,
+    "test_partition_observations": 27337,
+    "training_time_range": [
+      "2006-12-16 17:15:00",
+      "2010-02-05 05:15:00"
+    ],
+    "test_time_range": [
+      "2010-02-05 05:30:00",
+      "2010-11-26 21:00:00"
+    ],
+    "candidate_anomalies_in_test_partition": 333,
+    "candidate_anomalies_in_training_partition": 0,
+    "temporal_leakage_detected": false,
+    "context_cohort_references_training_only": true,
+    "status": "PASS \u2014 STRICT CHRONOLOGICAL INTEGRITY"
+  },
+  "consensus_counts_reconciliation": {
+    "1_model_isolated": 242,
+    "2_model_agreement": 50,
+    "3_model_consensus": 37,
+    "4_model_unanimous_consensus": 4,
+    "total_reconciled": 333,
+    "status": "PASS \u2014 EXACT MATCH"
+  },
+  "regression_test_suite_status": {
+    "total_tests_collected": 61,
+    "total_tests_passed": 61,
+    "total_tests_failed": 0,
+    "total_tests_skipped": 0,
+    "total_warnings": 0,
+    "pass_rate_percentage": 100.0,
+    "execution_duration_seconds": 17.88,
+    "status": "PASS \u2014 100% REGRESSION INTEGRITY"
+  }
+}

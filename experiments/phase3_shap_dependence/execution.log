@@ -1,0 +1,72 @@
+2026-11-07 17:32:57,678 [INFO] ============================================================================
+2026-11-07 17:32:57,679 [INFO] MEMBER 4 - PHASE 3: FEATURE DEPENDENCE & SHAP REDUNDANCY AUDIT
+2026-11-07 17:32:57,679 [INFO] Experiment ID: EXP-PHASE3-SHAP-05
+2026-11-07 17:32:57,679 [INFO] ============================================================================
+2026-11-07 17:32:59,294 [INFO] Loaded feature list (16 features)
+2026-11-07 17:33:00,370 [INFO] Training observations: 109,347 rows
+2026-11-07 17:33:00,570 [INFO] 
+Computing raw feature-value correlations...
+2026-11-07 17:33:01,399 [INFO] Saved feature_value_correlations.csv (256 pairs)
+2026-11-07 17:33:01,400 [INFO] 
+Computing SHAP attribution correlations...
+2026-11-07 17:33:01,446 [INFO] Saved shap_attribution_correlations.csv (256 pairs)
+2026-11-07 17:33:01,471 [INFO] Saved feature_correlation_pairs.csv (120 unique feature pairs)
+2026-11-07 17:33:01,472 [INFO] 
+--- Target Hypotheses Correlation Audit ---
+2026-11-07 17:33:01,475 [INFO]   Global_active_power vs Global_intensity:
+2026-11-07 17:33:01,475 [INFO]     Train Raw:  Pearson = 0.9994, Spearman = 0.9969
+2026-11-07 17:33:01,476 [INFO]     Cand Raw:   Pearson = 0.9993, Spearman = 0.9987
+2026-11-07 17:33:01,476 [INFO]     Cand SHAP:  Pearson = 0.9749, Spearman = 0.9480
+2026-11-07 17:33:01,477 [INFO]   rolling_mean_4 vs lag_1:
+2026-11-07 17:33:01,478 [INFO]     Train Raw:  Pearson = 0.9386, Spearman = 0.9355
+2026-11-07 17:33:01,478 [INFO]     Cand Raw:   Pearson = 0.8237, Spearman = 0.8553
+2026-11-07 17:33:01,479 [INFO]     Cand SHAP:  Pearson = 0.6872, Spearman = 0.7494
+2026-11-07 17:33:01,481 [INFO]   Sub_metering_1 vs Sub_metering_2:
+2026-11-07 17:33:01,481 [INFO]     Train Raw:  Pearson = 0.0799, Spearman = 0.0743
+2026-11-07 17:33:01,481 [INFO]     Cand Raw:   Pearson = -0.3128, Spearman = -0.3269
+2026-11-07 17:33:01,481 [INFO]     Cand SHAP:  Pearson = -0.4139, Spearman = -0.1233
+2026-11-07 17:33:01,483 [INFO]   Sub_metering_1 vs Sub_metering_3:
+2026-11-07 17:33:01,483 [INFO]     Train Raw:  Pearson = 0.1390, Spearman = 0.1745
+2026-11-07 17:33:01,484 [INFO]     Cand Raw:   Pearson = 0.1361, Spearman = 0.0816
+2026-11-07 17:33:01,484 [INFO]     Cand SHAP:  Pearson = 0.0166, Spearman = 0.0820
+2026-11-07 17:33:01,485 [INFO]   Sub_metering_2 vs Sub_metering_3:
+2026-11-07 17:33:01,485 [INFO]     Train Raw:  Pearson = 0.0996, Spearman = 0.0496
+2026-11-07 17:33:01,485 [INFO]     Cand Raw:   Pearson = 0.0854, Spearman = 0.0878
+2026-11-07 17:33:01,486 [INFO]     Cand SHAP:  Pearson = -0.0367, Spearman = 0.0211
+2026-11-07 17:33:01,487 [INFO]   lag_1 vs lag_4:
+2026-11-07 17:33:01,488 [INFO]     Train Raw:  Pearson = 0.6365, Spearman = 0.7093
+2026-11-07 17:33:01,488 [INFO]     Cand Raw:   Pearson = 0.1698, Spearman = 0.2970
+2026-11-07 17:33:01,488 [INFO]     Cand SHAP:  Pearson = -0.0202, Spearman = 0.2237
+2026-11-07 17:33:01,489 [INFO]   rolling_std_4 vs consumption_change:
+2026-11-07 17:33:01,490 [INFO]     Train Raw:  Pearson = 0.0315, Spearman = -0.0605
+2026-11-07 17:33:01,490 [INFO]     Cand Raw:   Pearson = 0.0476, Spearman = 0.0508
+2026-11-07 17:33:01,490 [INFO]     Cand SHAP:  Pearson = 0.0979, Spearman = 0.0515
+2026-11-07 17:33:01,491 [INFO] 
+Computing grouped feature importance across functional domains...
+2026-11-07 17:33:01,501 [INFO] Saved grouped_shap_importance.csv (6 groups)
+2026-11-07 17:33:01,501 [INFO] 
+Grouped Importance Summary (Candidate Anomalies, N=333):
+2026-11-07 17:33:01,502 [INFO]   Sub-metering Measurements (3 feats): L1=1.4288 (27.14%) | L2=1.1912 | NetSigned=1.3145
+2026-11-07 17:33:01,503 [INFO]   Direct Electrical Measurements (4 feats): L1=1.3627 (25.89%) | L2=0.8333 | NetSigned=1.2411
+2026-11-07 17:33:01,503 [INFO]   Rolling-Window Features (2 feats): L1=0.9719 (18.46%) | L2=0.7841 | NetSigned=0.9681
+2026-11-07 17:33:01,503 [INFO]   Lag Features (2 feats): L1=0.6039 (11.47%) | L2=0.5233 | NetSigned=0.5769
+2026-11-07 17:33:01,504 [INFO]   Temporal / Calendar Features (4 feats): L1=0.4713 (8.95%) | L2=0.2906 | NetSigned=0.2592
+2026-11-07 17:33:01,504 [INFO]   Consumption-Change Features (1 feats): L1=0.4252 (8.08%) | L2=0.4252 | NetSigned=0.4252
+2026-11-07 17:33:01,504 [INFO] 
+--- Robustness & Collinear Redundancy Analysis ---
+2026-11-07 17:33:01,505 [INFO]   Individual Global_intensity:  Mean |SHAP| = 0.5600 (Rank 3)
+2026-11-07 17:33:01,505 [INFO]   Individual Global_active_power: Mean |SHAP| = 0.4961 (Rank 5)
+2026-11-07 17:33:01,505 [INFO]   Individual Sub_metering_2:     Mean |SHAP| = 0.7644 (Rank 1)
+2026-11-07 17:33:01,505 [INFO]   Consolidated Bulk Power (P+I): Mean |SHAP| = 1.0540
+2026-11-07 17:33:01,505 [INFO]   Linear Sum of P and I:                     = 1.0561
+2026-11-07 17:33:01,506 [INFO]   Sign alignment rate: 92.5%
+2026-11-07 17:33:01,506 [INFO] 
+Generating publication figures...
+2026-11-07 17:33:08,090 [INFO] Saved Figure 1: feature_dependence_analysis.png
+2026-11-07 17:33:08,274 [WARNING] findfont: Failed to find font weight semibold for DejaVu Sans, now using 700.
+2026-11-07 17:33:08,376 [WARNING] findfont: Failed to find font weight semibold for DejaVu Sans, now using 700.
+2026-11-07 17:33:10,387 [INFO] Saved Figure 2: grouped_shap_importance.png
+2026-11-07 17:33:10,388 [INFO] 
+============================================================================
+2026-11-07 17:33:10,388 [INFO] EXP-PHASE3-SHAP-05 EXPERIMENT COMPLETED SUCCESSFULLY
+2026-11-07 17:33:10,388 [INFO] ============================================================================

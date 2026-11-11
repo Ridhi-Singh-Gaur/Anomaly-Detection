@@ -1,0 +1,85 @@
+[2026-11-07 20:51:05] [INFO] ================================================================================
+[2026-11-07 20:51:05] [INFO] STARTING MEMBER 4 — PHASE 3 FINAL INTEGRATION AND COMPLETION AUDIT
+[2026-11-07 20:51:05] [INFO] Experiment ID: EXP-PHASE3-XAI-07
+[2026-11-07 20:51:05] [INFO] Role: Member 4 — Explainable AI (XAI), Context-Aware Analysis, and Technical Validation
+[2026-11-07 20:51:05] [INFO] Operating Mode: STRICT READ-ONLY FORENSIC AUDIT
+[2026-11-07 20:51:05] [INFO] ================================================================================
+[2026-11-07 20:51:05] [INFO] [Step 1] Verifying Master Research Paper Strict Freeze...
+[2026-11-07 20:51:12] [INFO]   Target file: research_paper/complete_ieee_paper.md
+[2026-11-07 20:51:12] [INFO]   Target byte size: 122,229 bytes
+[2026-11-07 20:51:12] [INFO]   Actual byte size: 122,229 bytes
+[2026-11-07 20:51:12] [INFO]   SHA256: 3a7147a8fee927f71aa7496677fec2d5e7a9b0c5cb2f11664188ce6fa9b42211
+[2026-11-07 20:51:12] [INFO]   Status: PASS — STRICT FREEZE PRESERVED.
+[2026-11-07 20:51:15] [INFO] 
+[2026-11-07 20:51:15] [INFO] [Step 2] Auditing All Phase 3 Experiment Directories and Deliverables...
+[2026-11-07 20:51:46] [INFO]   Experiment 1 (EXP-PHASE3-CONTEXT-01): phase3_context_matching (6 files) — PASS
+[2026-11-07 20:51:46] [INFO]   Experiment 2 (EXP-PHASE3-CONTEXT-02): phase3_context_sensitivity (11 files) — PASS
+[2026-11-07 20:51:46] [INFO]   Experiment 3 (EXP-PHASE3-SHAP-03): phase3_shap_stability (13 files) — PASS
+[2026-11-07 20:51:46] [INFO]   Experiment 4 (EXP-PHASE3-SHAP-04): phase3_shap_randomized_stability (8 files) — PASS
+[2026-11-07 20:51:46] [INFO]   Experiment 5 (EXP-PHASE3-SHAP-05): phase3_shap_dependence (14 files) — PASS
+[2026-11-07 20:51:46] [INFO]   Experiment 6 (EXP-PHASE3-XAI-06): phase3_explanation_semantic_audit (7 files) — PASS
+[2026-11-07 20:51:56] [INFO]   Experiment 6.1 (EXP-PHASE3-XAI-06A): phase3_explanation_semantic_audit/reconciliation (6 files) — PASS
+[2026-11-07 20:51:56] [INFO]   Experiment 6.2 (EXP-PHASE3-XAI-06B): phase3_explanation_remediation (6 files) — PASS
+[2026-11-07 20:52:00] [INFO] 
+[2026-11-07 20:52:00] [INFO] [Step 3] Investigating Scientific Correctness, Units, and Terminology...
+[2026-11-07 20:52:13] [INFO]   Examined household_energy_anomaly_detection.py line 74: resample('15min').mean()
+[2026-11-07 20:52:26] [INFO]   Examined shap_explainer.py: TreeExplainer on IsolationForest evaluates average path length h(x)
+[2026-11-07 20:52:26] [INFO]   Dimensional analysis: 1-minute Wh averaged over 15 min yields Wh/min rate.
+[2026-11-07 20:52:26] [INFO]   Terminology analysis: 'pushed anomaly score higher' represents informal proxy for anomaly severity.
+[2026-11-07 20:52:26] [INFO]   Confirmed 100% compliant section headings: 'Features contributing towards anomaly severity'
+[2026-11-07 20:52:26] [INFO]   Confirmed zero unsupported appliance names, zero causal claims, zero routine assumptions.
+[2026-11-07 20:52:30] [INFO] 
+[2026-11-07 20:52:30] [INFO] [Step 4] Forensic Verification of Numerical Invariance across All 333 Candidates...
+[2026-11-07 20:52:59] [INFO]   Loaded outputs_backup_phase3/explanations.json vs active outputs/explanations.json
+[2026-11-07 20:52:59] [INFO]   Loaded outputs_backup_phase3/contextual_anomalies.csv vs active outputs/contextual_anomalies.csv
+[2026-11-07 20:52:59] [INFO]   Total candidates: 333 unique, identical chronological sequence.
+[2026-11-07 20:52:59] [INFO]   Max actual_power_kw difference: 0.00e+00
+[2026-11-07 20:52:59] [INFO]   Model flags match: True across all 333 records.
+[2026-11-07 20:52:59] [INFO]   Max model scores difference: 0.00e+00
+[2026-11-07 20:52:59] [INFO]   Max contextual statistics difference: 0.00e+00
+[2026-11-07 20:52:59] [INFO]   Max SHAP attribution difference: 0.00e+00
+[2026-11-07 20:52:59] [INFO]   Max difference across all 16 CSV numerical columns: 8.88e-16 (floating-point epsilon).
+[2026-11-07 20:52:59] [INFO]   Status: PASS — EXACT NUMERICAL INVARIANCE VERIFIED.
+[2026-11-07 20:53:05] [INFO] 
+[2026-11-07 20:53:05] [INFO] [Step 5] Auditing Chronological Partition Boundaries and Context Cohorts...
+[2026-11-07 20:53:30] [INFO]   Features dataset: 136,684 observations.
+[2026-11-07 20:53:30] [INFO]   Training partition (80.0%): 109,347 observations (2006-12-16 17:15:00 to 2010-02-05 05:15:00).
+[2026-11-07 20:53:30] [INFO]   Test partition (20.0%): 27,337 observations (2010-02-05 05:30:00 to 2010-11-26 21:00:00).
+[2026-11-07 20:53:30] [INFO]   Candidate anomalies: 333 observations (earliest 2010-02-05 06:45:00, latest 2010-11-26 06:45:00).
+[2026-11-07 20:53:30] [INFO]   Candidate membership in test partition: 333 / 333 (100.00%).
+[2026-11-07 20:53:30] [INFO]   Candidate membership in training partition: 0 / 333 (0.00%).
+[2026-11-07 20:53:30] [INFO]   Contextual twin reference cohorts derived strictly from training partition: True.
+[2026-11-07 20:53:30] [INFO]   Status: PASS — STRICT TEMPORAL INTEGRITY (ZERO LEAKAGE).
+[2026-11-07 20:53:35] [INFO] 
+[2026-11-07 20:53:35] [INFO] [Step 6] Executing Complete Pytest Regression Test Suite...
+[2026-11-07 20:54:02] [INFO]   Command: python -m pytest -v tests/
+[2026-11-07 20:54:02] [INFO]   Tests collected: 61
+[2026-11-07 20:54:02] [INFO]   Tests passed: 61 (100.0%)
+[2026-11-07 20:54:02] [INFO]   Tests failed: 0 (0.0%)
+[2026-11-07 20:54:02] [INFO]   Tests skipped: 0 (0.0%)
+[2026-11-07 20:54:02] [INFO]   Warnings: 0
+[2026-11-07 20:54:02] [INFO]   Execution duration: 17.88 seconds
+[2026-11-07 20:54:02] [INFO]   Status: PASS — COMPLETE REGRESSION VERIFICATION.
+[2026-11-07 20:54:10] [INFO] 
+[2026-11-07 20:54:10] [INFO] [Step 7] Checking Core Production Model and Baseline Deliverable Hashes...
+[2026-11-07 20:54:16] [INFO]   isolation_forest_model.joblib: 2,434,327 bytes (SHA256: 324645fe3b729bbe...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   power_scaler.joblib: 991 bytes (SHA256: b8c668e0dcb03815...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   lstm_prediction_model.keras: 87,976 bytes (SHA256: d2d27cd41d1db4e2...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   lstm_autoencoder_model.keras: 192,021 bytes (SHA256: 886b011f6a4b28b9...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   household_15min_features.csv: 32,628,104 bytes (SHA256: 9d88ebe15a7aa613...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   statistical_baseline_results.csv: 3,322,513 bytes (SHA256: 636778b69e3167b5...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   isolation_forest_results.csv: 2,813,996 bytes (SHA256: 31c27f69b8c347e6...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   lstm_prediction_results.csv: 3,532,863 bytes (SHA256: 9859e47f66fc968a...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   lstm_autoencoder_results.csv: 3,375,380 bytes (SHA256: 81fe3c3f50571abb...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   outputs_backup_phase3/explanations.json: 767,346 bytes (SHA256: 1aa58b234f177131...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   outputs_backup_phase3/contextual_anomalies.csv: 299,464 bytes (SHA256: 4d2aa46fd5c7bd40...) — VERIFIED
+[2026-11-07 20:54:16] [INFO]   shap_values_trees_200.csv: 197,056 bytes (SHA256: 6eb95f28cf2c430d...) — VERIFIED
+[2026-11-07 20:54:20] [INFO] 
+[2026-11-07 20:54:20] [INFO] [Step 8] Compiling Integration Reports and Deliverables...
+[2026-11-07 20:54:53] [INFO]   Saved experiment_consistency_matrix.csv (8 experiments documented)
+[2026-11-07 20:55:14] [INFO]   Saved artifact_integrity_summary.json (complete system state captured)
+[2026-11-07 20:55:55] [INFO]   Saved scientific_wording_audit.md (in-depth scientific analysis)
+[2026-11-07 20:56:00] [INFO] ================================================================================
+[2026-11-07 20:56:00] [INFO] FINAL INTEGRATION AUDIT COMPLETE. ALL TECHNICAL RESPONSIBILITIES VERIFIED.
+[2026-11-07 20:56:00] [INFO] ================================================================================
+

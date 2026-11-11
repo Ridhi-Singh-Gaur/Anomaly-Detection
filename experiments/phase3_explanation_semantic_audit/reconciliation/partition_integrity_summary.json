@@ -1,0 +1,51 @@
+{
+  "experiment_id": "EXP-PHASE3-XAI-06A",
+  "dataset_artifact": "Anomaly-Detection-main/outputs/household_15min_features.csv",
+  "total_dataset_observations": 136684,
+  "chronological_split_ratio": "80/20",
+  "training_partition": {
+    "observation_count": 109347,
+    "percentage": 79.9999,
+    "start_timestamp": "2006-12-16 17:15:00",
+    "end_timestamp": "2010-02-05 05:15:00",
+    "global_index_range": [
+      0,
+      109346
+    ]
+  },
+  "testing_partition": {
+    "observation_count": 27337,
+    "percentage": 20.0001,
+    "start_timestamp": "2010-02-05 05:30:00",
+    "end_timestamp": "2010-11-26 21:00:00",
+    "global_index_range": [
+      109347,
+      136683
+    ]
+  },
+  "boundary_gap_minutes": 15.0,
+  "candidate_anomalies": {
+    "total_candidates": 333,
+    "membership_in_test_partition": 333,
+    "membership_in_training_partition": 0,
+    "membership_in_neither": 0,
+    "earliest_candidate_timestamp": "2010-02-05 06:45:00",
+    "latest_candidate_timestamp": "2010-11-26 06:45:00",
+    "earliest_candidate_global_index": 109352,
+    "earliest_candidate_test_relative_index": 5
+  },
+  "discrepancy_root_cause_analysis": {
+    "discrepancy_identified": "Experiment 6 report text erroneously stated training ended 2009-12-11 and candidates started 2010-01-13.",
+    "source_of_error": "Typographical / narrative transcription error in explanation_quality_report.md markdown text.",
+    "execution_code_status": "The underlying execution script (run_explanation_semantic_audit.py) correctly evaluated partitions dynamically against 2010-02-05 05:15:00.",
+    "data_leakage_status": "ZERO temporal leakage. All 333 candidate anomalies strictly occur in the test partition (> 2010-02-05 05:15:00).",
+    "historical_context_cohort_status": "100% valid. Context cohorts were extracted exclusively from the 109,347 training observations.",
+    "revalidation_needed": "No model, SHAP value, prediction, or baseline experiment requires revalidation. All models and evaluations operated strictly on the verified 80/20 partition."
+  },
+  "safeguards_verified": {
+    "research_paper_bytes": 122229,
+    "paper_freeze_preserved": true,
+    "production_code_modified": false,
+    "baseline_models_modified": false
+  }
+}

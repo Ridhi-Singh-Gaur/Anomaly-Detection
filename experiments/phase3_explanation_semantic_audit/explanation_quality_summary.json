@@ -1,0 +1,58 @@
+{
+  "total_anomalies_audited": 333,
+  "overall_status_counts": {
+    "PASS": 260,
+    "WARNING": 73,
+    "FAIL": 0,
+    "NOT_VERIFIABLE": 0
+  },
+  "dimension_status_counts": {
+    "audit_a_record_completeness": {
+      "PASS": 333,
+      "WARNING": 0,
+      "FAIL": 0,
+      "NOT_VERIFIABLE": 0
+    },
+    "audit_b_shap_numerical": {
+      "PASS": 328,
+      "WARNING": 5,
+      "FAIL": 0,
+      "NOT_VERIFIABLE": 0
+    },
+    "audit_c_consensus_consistency": {
+      "PASS": 333,
+      "WARNING": 0,
+      "FAIL": 0,
+      "NOT_VERIFIABLE": 0
+    },
+    "audit_d_contextual_reference": {
+      "PASS": 333,
+      "WARNING": 0,
+      "FAIL": 0,
+      "NOT_VERIFIABLE": 0
+    },
+    "audit_e_scientific_validity": {
+      "PASS": 260,
+      "WARNING": 73,
+      "FAIL": 0,
+      "NOT_VERIFIABLE": 0
+    }
+  },
+  "issue_category_counts": {
+    "unsupported_appliance_attribution": 0,
+    "unsupported_causal_claim": 0,
+    "unsupported_household_behaviour_claim": 0,
+    "incorrect_circuit_mapping": 0,
+    "incorrect_shap_interpretation": 5,
+    "unsupported_fault_diagnosis": 0,
+    "other_scientific_terminology_issue": 0,
+    "negative_or_negligible_shap_feature_cited": 5,
+    "unverified_general_circuit_hypothesis": 73
+  },
+  "consensus_counts_reconciled": {
+    "1_model_consensus": 242,
+    "2_model_consensus": 50,
+    "3_model_consensus": 37,
+    "4_model_consensus": 4
+  }
+}
