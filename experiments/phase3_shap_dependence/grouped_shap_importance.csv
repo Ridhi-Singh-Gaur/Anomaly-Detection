@@ -1,0 +1,7 @@
+group_name,num_features,constituent_features,l1_importance_sum,percentage_of_total_importance,sample_l2_euclidean_norm,sample_net_signed_magnitude,within_group_distributions
+Sub-metering Measurements,3,Sub_metering_1;Sub_metering_2;Sub_metering_3,1.4287742842724267,27.143664902336816,1.1911820594542482,1.3145043377028236,Sub_metering_1: 0.5239 (36.7%); Sub_metering_2: 0.7644 (53.5%); Sub_metering_3: 0.1405 (9.8%)
+Direct Electrical Measurements,4,Global_active_power;Global_intensity;Global_reactive_power;Voltage,1.3627387066875372,25.889129732347193,0.8333288989427946,1.2410701151810426,Global_active_power: 0.4961 (36.4%); Global_intensity: 0.5600 (41.1%); Global_reactive_power: 0.1951 (14.3%); Voltage: 0.1115 (8.2%)
+Rolling-Window Features,2,rolling_mean_4;rolling_std_4,0.9718581966096373,18.463233494431712,0.7840716351950043,0.9680921894260435,rolling_mean_4: 0.3135 (32.3%); rolling_std_4: 0.6584 (67.7%)
+Lag Features,2,lag_1;lag_4,0.6038787509529524,11.4724086498069,0.523299531405469,0.5769175930351033,lag_1: 0.3401 (56.3%); lag_4: 0.2638 (43.7%)
+Temporal / Calendar Features,4,hour;day_of_week;is_weekend;month,0.47126069967837037,8.95294844995366,0.29062345275765367,0.2591951626315393,hour: 0.0729 (15.5%); day_of_week: 0.1089 (23.1%); is_weekend: 0.2219 (47.1%); month: 0.0676 (14.3%)
+Consumption-Change Features,1,consumption_change,0.4252379728034165,8.078614771123725,0.4252379728034165,0.4252379728034165,consumption_change: 0.4252 (100.0%)

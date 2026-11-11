@@ -1,0 +1,47 @@
+2026-11-07 20:11:04,809 [INFO] ============================================================================
+2026-11-07 20:11:04,810 [INFO] EXPERIMENT 6.1: CHRONOLOGICAL PARTITION & AUDIT INTEGRITY RECONCILIATION
+2026-11-07 20:11:04,810 [INFO] Experiment ID: EXP-PHASE3-XAI-06A
+2026-11-07 20:11:04,810 [INFO] ============================================================================
+2026-11-07 20:11:04,812 [INFO] Safeguard Check: complete_ieee_paper.md = 122,229 bytes (Required: 122,229 bytes)
+2026-11-07 20:11:04,813 [INFO] 
+[Step 1] Loading processed dataset: C:\Users\hp\Downloads\Anomaly-Detection-main\Anomaly-Detection-main\outputs\household_15min_features.csv
+2026-11-07 20:11:06,065 [INFO]   Total observations: 136,684
+2026-11-07 20:11:06,067 [INFO]   First timestamp:    2006-12-16 17:15:00
+2026-11-07 20:11:06,068 [INFO]   Last timestamp:     2010-11-26 21:00:00
+2026-11-07 20:11:06,069 [INFO]   Strictly sorted:    True
+2026-11-07 20:11:06,069 [INFO] 
+[Step 2] Evaluating 80/20 chronological train/test split...
+2026-11-07 20:11:06,146 [INFO]   Training observations: 109,347 (80.00%)
+2026-11-07 20:11:06,147 [INFO]     Index range:         0 to 109346
+2026-11-07 20:11:06,147 [INFO]     Start timestamp:     2006-12-16 17:15:00
+2026-11-07 20:11:06,147 [INFO]     End timestamp:       2010-02-05 05:15:00
+2026-11-07 20:11:06,148 [INFO]   Testing observations:  27,337 (20.00%)
+2026-11-07 20:11:06,149 [INFO]     Index range:         109347 to 136683
+2026-11-07 20:11:06,149 [INFO]     Start timestamp:     2010-02-05 05:30:00
+2026-11-07 20:11:06,149 [INFO]     End timestamp:       2010-11-26 21:00:00
+2026-11-07 20:11:06,154 [INFO]   Chronological boundary gap: 15.0 minutes
+2026-11-07 20:11:06,155 [INFO] 
+[Step 3] Loading original model prediction files...
+2026-11-07 20:11:06,377 [INFO]   statistical_baseline    : rows=27,337, start=2010-02-05 05:30:00, end=2010-11-26 21:00:00, flagged=82
+2026-11-07 20:11:06,555 [INFO]   isolation_forest        : rows=27,337, start=2010-02-05 05:30:00, end=2010-11-26 21:00:00, flagged=93
+2026-11-07 20:11:06,751 [INFO]   lstm_prediction         : rows=27,337, start=2010-02-05 05:30:00, end=2010-11-26 21:00:00, flagged=155
+2026-11-07 20:11:06,938 [INFO]   lstm_autoencoder        : rows=27,337, start=2010-02-05 05:30:00, end=2010-11-26 21:00:00, flagged=139
+2026-11-07 20:11:06,939 [INFO] 
+[Step 4] Loading candidate anomaly explanations...
+2026-11-07 20:11:06,961 [INFO]   Loaded 333 explanations from explanations.json
+2026-11-07 20:11:06,989 [INFO]   Loaded 333 rows from contextual_anomalies.csv
+2026-11-07 20:11:06,989 [INFO] 
+[Step 5] Evaluating partition membership for all 333 candidate timestamps...
+2026-11-07 20:11:09,226 [INFO]   Saved candidate_partition_membership.csv (333 rows)
+2026-11-07 20:11:09,226 [INFO]   Partition Membership Summary:
+2026-11-07 20:11:09,226 [INFO]     Belongs to Original Test Partition:     333 (100.00%)
+2026-11-07 20:11:09,227 [INFO]     Belongs to Original Training Partition: 0 (0.00%)
+2026-11-07 20:11:09,227 [INFO]     Belongs to Neither Partition:           0 (0.00%)
+2026-11-07 20:11:09,229 [INFO]   Candidate Anomaly Range:
+2026-11-07 20:11:09,230 [INFO]     Earliest Candidate Anomaly: 2010-02-05 06:45:00 (1.25 hours after test start)
+2026-11-07 20:11:09,230 [INFO]     Latest Candidate Anomaly:   2010-11-26 06:45:00 (14.25 hours before test end)
+2026-11-07 20:11:09,236 [INFO]   Saved partition_integrity_summary.json
+2026-11-07 20:11:09,236 [INFO] 
+============================================================================
+2026-11-07 20:11:09,236 [INFO] EXP-PHASE3-XAI-06A RECONCILIATION COMPLETED SUCCESSFULLY
+2026-11-07 20:11:09,237 [INFO] ============================================================================

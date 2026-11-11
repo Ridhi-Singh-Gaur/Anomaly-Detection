@@ -1,0 +1,334 @@
+timestamp,actual_power_kw,models_flagged_count,consensus_level,audit_a_completeness_status,audit_b_shap_status,audit_c_consensus_status,audit_d_context_status,audit_e_scientific_status,overall_status,issue_categories,concise_findings
+2010-02-05 06:45:00,2.798666666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-02-06 18:45:00,6.403066666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-06 19:00:00,4.922666666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-06 19:30:00,3.412933333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-02-06 23:00:00,4.889466666666666,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-06 23:15:00,4.1513333333333335,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-07 02:30:00,1.5264,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-07 14:45:00,3.2841333333333336,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-07 18:45:00,3.952933333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-09 21:00:00,4.784133333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-12 06:30:00,3.1366666666666663,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-13 12:15:00,3.566533333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-13 12:30:00,7.010800000000001,4,Four-Model Consensus Candidate Anomaly,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-13 12:45:00,4.540533333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-13 13:00:00,3.951866666666666,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-13 13:15:00,3.868933333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-13 13:30:00,3.0404,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-13 14:00:00,4.387066666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-13 14:15:00,5.180000000000001,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-15 19:00:00,4.2604,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-15 20:15:00,5.703866666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-15 20:30:00,4.946666666666667,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-15 20:45:00,4.739199999999999,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-15 21:00:00,4.544,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-15 21:15:00,4.367466666666667,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-16 06:45:00,2.826,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-17 09:30:00,4.010133333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-17 12:00:00,5.1788,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-17 12:15:00,4.254266666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-17 14:45:00,3.830933333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-17 15:00:00,2.5448000000000004,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-17 15:30:00,1.6838666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-18 06:45:00,2.9065333333333334,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-20 10:45:00,3.934,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-20 18:00:00,3.7928,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-20 18:15:00,2.917333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 11:00:00,5.114133333333333,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 11:15:00,7.375333333333333,4,Four-Model Consensus Candidate Anomaly,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 11:30:00,4.5548,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 12:00:00,3.302666666666666,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 12:15:00,2.1288,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-02-21 13:45:00,3.6696,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 14:00:00,5.580533333333333,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 14:15:00,5.127066666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 15:00:00,4.440799999999999,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 15:15:00,5.913733333333334,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 15:30:00,5.587066666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 15:45:00,2.1124,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-02-21 16:00:00,1.9130666666666665,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 16:15:00,1.8533333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-21 16:30:00,2.218933333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-22 06:45:00,4.503333333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-22 07:00:00,4.318933333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-23 18:45:00,3.3706666666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-23 21:45:00,5.263866666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-23 22:00:00,5.143866666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-23 22:15:00,3.332133333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-23 22:30:00,1.4662666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-23 22:45:00,0.834,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-02-23 23:00:00,0.4370666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-02-24 08:00:00,4.381066666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-24 08:15:00,4.501333333333333,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-02-26 22:15:00,4.902666666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-01 11:15:00,2.85,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-01 23:00:00,1.6030666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-05 14:45:00,3.7424,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-07 17:00:00,4.309466666666666,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-07 17:15:00,2.679333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-07 17:45:00,0.7910666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-08 07:45:00,4.252666666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-08 08:00:00,4.896133333333333,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-08 09:00:00,5.892133333333334,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-08 09:15:00,4.510400000000001,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-08 09:45:00,1.6221333333333334,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-08 10:00:00,1.6501333333333332,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-08 12:00:00,4.9792000000000005,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-08 15:15:00,4.153733333333333,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-08 15:30:00,5.348933333333333,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-08 15:45:00,3.6424,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-10 06:45:00,2.8348,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-12 19:00:00,4.3964,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-13 10:45:00,4.125733333333334,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-13 14:15:00,5.367466666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-13 15:15:00,1.6266666666666665,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-13 17:15:00,4.9256,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-13 17:30:00,2.9601333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-13 17:45:00,2.896533333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-13 18:00:00,5.061733333333334,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-15 19:15:00,3.8212,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-21 16:30:00,0.3473333333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-21 16:45:00,0.4645333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-21 20:45:00,4.4454666666666665,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-27 18:30:00,6.2336,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-27 18:45:00,3.289333333333333,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-27 19:00:00,2.1530666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-27 19:15:00,0.8593333333333334,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-27 19:30:00,1.1134666666666668,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-28 10:45:00,4.491333333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-28 11:00:00,3.6486666666666654,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-28 14:00:00,3.880933333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-28 14:15:00,3.452933333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-28 14:45:00,0.6946666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-28 19:30:00,4.1676,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-28 22:15:00,4.617999999999999,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-30 07:00:00,2.9254666666666664,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-03-31 12:45:00,3.892533333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-03-31 13:00:00,3.8398666666666665,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-01 19:30:00,3.384,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-01 22:00:00,4.440933333333334,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-05 10:30:00,4.431866666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-05 10:45:00,4.4130666666666665,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-05 11:45:00,0.4905333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-04-05 12:30:00,0.4115999999999999,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-04-05 12:45:00,0.3348,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-04-11 20:30:00,5.2838666666666665,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-11 20:45:00,7.088133333333333,4,Four-Model Consensus Candidate Anomaly,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-11 21:00:00,5.161866666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-11 21:15:00,4.658666666666666,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-11 21:30:00,3.983333333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-11 21:45:00,1.7286666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-04-14 06:45:00,2.668,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-14 12:15:00,0.5350666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-04-14 13:15:00,3.727333333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-14 13:30:00,2.435466666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-14 14:30:00,3.5728,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-19 17:30:00,4.182,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-26 15:00:00,2.9628,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-04-26 17:00:00,0.3973333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-01 12:30:00,0.5882666666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-01 12:45:00,0.6046666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-01 14:15:00,4.0172,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-02 12:15:00,3.971333333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-02 12:30:00,4.673866666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-02 13:30:00,5.0,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-02 19:00:00,4.449066666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-02 19:15:00,4.923466666666667,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-02 19:30:00,3.881466666666667,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-02 22:00:00,1.4077333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-02 22:15:00,0.3962666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-05 21:00:00,4.521199999999999,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-08 09:30:00,3.9954666666666663,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-08 21:00:00,3.248533333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-09 20:30:00,3.1697333333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-09 20:45:00,4.9536,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-09 21:00:00,4.9712,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-09 21:45:00,1.1706666666666663,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-09 22:00:00,1.514,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-12 14:15:00,4.095466666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-12 17:00:00,3.73,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-15 20:15:00,4.2792,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-15 23:30:00,4.589333333333333,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-15 23:45:00,4.2598666666666665,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-16 14:00:00,6.4548000000000005,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-16 14:15:00,4.051333333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-16 14:30:00,2.700533333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-16 14:45:00,0.738,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-16 15:00:00,0.5369333333333334,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-16 19:00:00,4.131600000000001,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-19 15:15:00,0.3864,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-19 16:30:00,0.3996,1,Isolated Flag (LSTM_Autoencoder),PASS,WARNING,PASS,PASS,WARNING,WARNING,incorrect_shap_interpretation; negative_or_negligible_shap_feature_cited; unverified_general_circuit_hypothesis,"Feature with negative (<0) or negligible (<0.05) attribution cited under 'Key driving features'.; Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-22 12:00:00,4.985333333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-24 10:15:00,2.888,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-24 11:00:00,0.5493333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-24 16:45:00,0.4024,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-05-25 20:15:00,2.307733333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-25 20:30:00,1.7892,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-26 13:00:00,3.3665333333333334,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-26 19:15:00,4.126266666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-05-29 16:45:00,0.3766666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,WARNING,PASS,PASS,WARNING,WARNING,incorrect_shap_interpretation; negative_or_negligible_shap_feature_cited; unverified_general_circuit_hypothesis,"Feature with negative (<0) or negligible (<0.05) attribution cited under 'Key driving features'.; Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-05 02:30:00,0.3149333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-05 22:30:00,4.484533333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-05 23:15:00,4.247066666666667,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-06 00:00:00,3.7233333333333336,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-06 18:00:00,0.6510666666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-06 18:15:00,0.5224,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-08 09:30:00,3.512266666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-08 19:00:00,3.0442666666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-08 19:45:00,0.7298666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-09 13:15:00,3.337333333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-09 14:00:00,1.4044,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-09 14:15:00,0.882,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-12 15:45:00,1.4245333333333332,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-13 10:15:00,4.2264,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-19 21:30:00,3.8128,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-19 21:45:00,3.8638666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-20 18:45:00,4.7052000000000005,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-21 17:30:00,2.698,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-21 18:15:00,0.8969333333333334,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-21 18:45:00,5.939466666666666,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-21 19:00:00,3.1282666666666668,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-21 19:15:00,2.8998666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-21 19:45:00,0.3478666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-22 18:30:00,2.792666666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-23 20:45:00,3.2116,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-23 21:00:00,4.724133333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-23 21:15:00,3.926,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-06-27 10:00:00,0.6669333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-28 00:15:00,0.3388,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-29 22:30:00,1.0637333333333332,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-29 22:45:00,1.1901333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-06-29 23:15:00,0.4929333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-07-01 00:00:00,4.1272,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-07-01 00:15:00,4.000266666666667,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-07-13 14:30:00,3.0938666666666665,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-07-25 23:00:00,3.0626666666666664,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-08-27 15:30:00,0.5190666666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-08-27 15:45:00,3.857466666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-08-27 16:00:00,1.6450666666666665,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-08-27 16:15:00,0.5502666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-08-27 16:30:00,0.3747999999999999,1,Isolated Flag (LSTM_Autoencoder),PASS,WARNING,PASS,PASS,WARNING,WARNING,incorrect_shap_interpretation; negative_or_negligible_shap_feature_cited; unverified_general_circuit_hypothesis,"Feature with negative (<0) or negligible (<0.05) attribution cited under 'Key driving features'.; Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-08-27 17:30:00,3.205866666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-08-27 18:45:00,4.479333333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-06 17:30:00,3.7948,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-08 00:30:00,0.4856,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-09-09 14:30:00,0.5192,1,Isolated Flag (LSTM_Autoencoder),PASS,WARNING,PASS,PASS,WARNING,WARNING,incorrect_shap_interpretation; negative_or_negligible_shap_feature_cited; unverified_general_circuit_hypothesis,"Feature with negative (<0) or negligible (<0.05) attribution cited under 'Key driving features'.; Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-09-09 19:30:00,2.6382666666666665,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-12 03:15:00,3.6412,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-12 13:15:00,3.562933333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-12 13:30:00,2.6485333333333334,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-12 13:45:00,1.5150666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-13 01:00:00,0.4734666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-09-17 16:30:00,3.8637333333333337,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-17 19:00:00,4.748933333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-09-17 20:45:00,1.3023999999999998,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-09-17 21:00:00,0.6686666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-09-17 21:30:00,0.4876,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-09-22 10:45:00,0.1794666666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-09-22 11:00:00,0.3745333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-09-28 19:00:00,2.472,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-02 20:15:00,4.035466666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-02 20:30:00,5.484533333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-02 20:45:00,4.8516,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-02 21:15:00,4.229333333333333,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-03 11:30:00,4.489199999999999,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-10 19:00:00,4.536933333333334,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-10 21:00:00,4.795066666666667,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-11 19:15:00,4.8368,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-11 19:30:00,3.488266666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-11 21:30:00,4.936933333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-12 18:30:00,3.3608,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-12 18:45:00,4.3508,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-12 19:00:00,3.4862666666666664,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-13 06:45:00,2.692,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-14 18:45:00,5.0764000000000005,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-14 19:00:00,3.647466666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-14 19:15:00,4.1146666666666665,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-14 19:30:00,4.3164,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-14 23:00:00,0.7042666666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-10-14 23:15:00,0.7209333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-10-17 19:30:00,3.730933333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 09:15:00,5.481866666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 09:30:00,3.4572000000000003,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 10:15:00,1.5065333333333333,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-10-18 10:45:00,4.519733333333334,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 12:00:00,4.653866666666667,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 13:30:00,4.823466666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 13:45:00,3.398,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 14:00:00,3.1362666666666663,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 18:30:00,5.0968,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 18:45:00,5.436000000000001,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-18 19:00:00,5.393866666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-19 06:45:00,2.888,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-19 18:00:00,4.448,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-19 18:15:00,4.260133333333333,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-20 18:45:00,3.5636,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-21 06:45:00,3.2613333333333334,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-23 17:00:00,1.6926666666666668,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-23 17:15:00,4.922266666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-23 21:00:00,4.335066666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-24 12:15:00,4.2376,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-24 15:30:00,1.1957142857142855,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-24 18:45:00,4.323466666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-26 09:00:00,2.7118666666666664,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-26 09:45:00,0.316,1,Isolated Flag (LSTM_Autoencoder),PASS,WARNING,PASS,PASS,WARNING,WARNING,incorrect_shap_interpretation; negative_or_negligible_shap_feature_cited; unverified_general_circuit_hypothesis,"Feature with negative (<0) or negligible (<0.05) attribution cited under 'Key driving features'.; Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-10-26 11:15:00,3.4696,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-26 11:30:00,4.0204,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-31 05:15:00,3.6322666666666663,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-10-31 06:45:00,0.3393333333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-10-31 07:00:00,0.3214666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-04 08:15:00,5.730933333333334,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 08:30:00,6.4332,4,Four-Model Consensus Candidate Anomaly,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 08:45:00,3.3972,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 09:00:00,1.9788,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-04 09:15:00,1.6173333333333335,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-04 09:30:00,2.0541333333333336,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-04 10:00:00,5.7676,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 11:00:00,4.114133333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 11:30:00,3.1850666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 12:30:00,4.057066666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 12:45:00,2.798666666666666,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 13:30:00,4.638933333333333,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 13:45:00,2.4146666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 14:00:00,1.6233333333333335,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 14:15:00,0.7113333333333334,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-04 19:15:00,5.605333333333333,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 19:30:00,4.665866666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 20:15:00,5.234533333333333,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 20:30:00,5.8129333333333335,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 20:45:00,4.295599999999999,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-04 21:15:00,3.8458666666666663,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-05 07:00:00,3.8277333333333337,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-06 11:15:00,3.3298666666666668,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-07 09:30:00,2.767333333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-10 10:00:00,6.212133333333333,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-10 10:15:00,3.4889333333333337,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-10 11:00:00,2.3906666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-10 11:15:00,5.096666666666667,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-11 15:30:00,3.9368,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-11 16:45:00,4.5233333333333325,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-13 16:30:00,4.5548,1,Isolated Flag (Statistical_Baseline),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-14 15:00:00,4.172266666666666,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-14 15:15:00,3.9668,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-14 16:00:00,4.257733333333333,1,Isolated Flag (Isolation_Forest),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-15 07:45:00,4.5656,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-15 08:45:00,1.4206666666666663,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-15 12:00:00,5.247733333333334,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-15 12:15:00,3.5813333333333333,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-15 12:45:00,1.7735999999999998,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-18 06:45:00,2.6512,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-18 18:15:00,3.571733333333333,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-20 18:15:00,7.767866666666666,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-20 18:30:00,6.4436,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-20 18:45:00,5.464,3,Three-Way Multi-Model Consensus,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-20 19:00:00,4.1272,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-20 19:15:00,3.5721333333333334,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-22 18:15:00,3.969066666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-22 18:30:00,4.660666666666667,2,Two-Model Agreement,PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-22 19:30:00,1.4365333333333334,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-23 14:00:00,1.274,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-23 15:00:00,0.2952,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-24 07:45:00,4.740799999999999,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.
+2010-11-24 08:15:00,1.584666666666667,1,Isolated Flag (LSTM_Autoencoder),PASS,PASS,PASS,PASS,WARNING,WARNING,unverified_general_circuit_hypothesis,"Tentative unmetered circuit hypothesis ('lighting, or wall sockets') generated without dedicated sub-meter verification."
+2010-11-26 06:45:00,3.006666666666667,1,Isolated Flag (LSTM_Prediction),PASS,PASS,PASS,PASS,PASS,PASS,None,All audit checks passed cleanly.

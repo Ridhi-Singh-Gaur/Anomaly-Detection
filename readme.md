@@ -1,21 +1,23 @@
-# Household Electricity Anomaly Detection Using Machine Learning and LSTM
+# Context-Aware Explainable AI for Household Electricity Anomaly Detection
 
 ## 1. About the Project
 
-Household Electricity Anomaly Detection is a machine learning project that identifies unusual patterns in household electricity consumption.
+This repository implements an end-to-end household electricity anomaly detection and **Context-Aware Explainable AI (XAI)** pipeline using statistical profiling, classical machine learning, deep recurrent sequence models, and game-theoretic feature attribution.
 
-Electricity consumption changes throughout the day. For example, consumption may increase when a washing machine, air conditioner, or water heater is being used. However, an unexpected spike or sudden change may deserve further investigation.
+Electricity consumption varies continuously with diurnal schedules, weekend routines, and seasonal heating/cooling demand. Rather than issuing opaque binary flags, this project combines multi-paradigm detection with leak-free historical context matching and TreeSHAP path-length inversion to produce verifiable, evidence-bounded explanations across **333 candidate anomalies** identified in held-out test data.
 
-The purpose of this project is to learn normal consumption patterns and identify readings that differ significantly from those patterns.
+The project evaluates four detection models:
 
-The project uses four methods:
+1. **Statistical Baseline:** Identifies consumption that differs significantly from typical median consumption for the same `(hour, is_weekend)` regime.
+2. **Isolation Forest:** Detects unusual combinations of 16 multivariate electricity measurements, temporal flags, and rolling/lag features.
+3. **LSTM Prediction:** Supervised continuous next-step regressor trained on 4-step power windows to flag large prediction residuals.
+4. **LSTM Autoencoder:** Unsupervised 4-step sequence encoder-decoder with an overcomplete 32-dimensional latent state that flags sequences with large trajectory reconstruction MSE.
 
-1. **Statistical Baseline:** Identifies consumption that differs significantly from typical consumption for a particular time of day.
-2. **Isolation Forest:** Detects unusual combinations of electricity measurements and time-related features.
-3. **LSTM Prediction:** Predicts the next electricity reading and identifies large differences between actual and predicted values.
-4. **LSTM Autoencoder:** Learns to reconstruct common consumption patterns and flags sequences with unusually large reconstruction errors.
+Across **27,337 chronological test intervals**, the four models collectively surface **333 candidate timestamps** (`1.218%`). On top of those frozen predictions, the XAI layer adds:
 
-The pipeline automatically performs data cleaning, feature engineering, model training, anomaly detection, evaluation, and result generation.
+- **Historical Twin Contextualization (`context_analysis.py`):** Compares each candidate anomaly against training-only reference cohorts matching `±1 h` (modulo 24), identical weekend status, and `±1 month` (modulo 12).
+- **TreeSHAP Path-Length Inversion (`shap_explainer.py`):** Decomposes Isolation Forest average path length h(x) into additive anomaly-severity attributions (phi_anom = -phi_path).
+- **Evidence-Bounded Diagnostics (`explanation_generator.py` & `context_aware_xai.py`):** Synthesizes multi-model consensus, contextual deviations, sub-metering clues, and directionally categorized SHAP features without speculative appliance or causal claims.
 
 **Important:** The models identify candidate anomalies, not confirmed electrical faults. High electricity consumption may be normal depending on household activities.
 
@@ -50,9 +52,9 @@ The original dataset contains nine columns: two time-related columns and seven e
 - **Global_reactive_power:** Reactive power associated with household electrical equipment, measured in kilowatts (kW).
 - **Voltage:** Voltage supplied to the household, measured in volts (V).
 - **Global_intensity:** Electrical current drawn by the household, measured in amperes (A).
-- **Sub_metering_1:** Energy consumed by the kitchen sub-meter, including appliances such as the dishwasher, oven, and microwave. Measured in watt-hours (Wh).
-- **Sub_metering_2:** Energy consumed by the laundry-room sub-meter, including appliances such as the washing machine, tumble dryer, and refrigerator. Measured in watt-hours (Wh).
-- **Sub_metering_3:** Energy consumed by the electric water heater and air conditioner. Measured in watt-hours (Wh).
+- **Sub_metering_1:** Energy consumed per minute by the kitchen sub-meter (dishwasher, oven, microwave in UCI metadata), recorded in watt-hours (Wh) at 1-minute resolution (`Wh/min` average rate after 15-minute `.mean()` resampling, corresponding to `P_avg = 60 × rate` W or `15 × rate` Wh cumulative per 15-minute slot).
+- **Sub_metering_2:** Energy consumed per minute by the laundry-room sub-meter (washing machine, tumble dryer, refrigerator, light in UCI metadata), recorded in Wh (`Wh/min` average rate after 15-minute resampling).
+- **Sub_metering_3:** Energy consumed per minute by the electric water heater and air conditioner sub-meter in UCI metadata, recorded in Wh (`Wh/min` average rate after 15-minute resampling).
 
 **Understanding the main variable:** `Global_active_power` represents the household's overall active power consumption. A sudden increase may indicate unusual usage, but it is not automatically an anomaly.
 
@@ -273,30 +275,49 @@ These metrics describe reconstruction of the ending reading in each test sequenc
 
 The autoencoder's very low errors should be investigated further. The metrics cannot be directly compared because the models perform different tasks. Low reconstruction error also does not establish that genuine anomalies are being detected correctly.
 
-## 9. Generated Output Files
+## 9. Context-Aware Explainable AI (XAI) Pipeline & Validation Suite
 
-All results are saved in the `outputs/` directory.
+To make anomaly flags transparent and auditable, four XAI modules extend the base detector outputs without altering trained weights, predictions, thresholds, or timestamps:
 
-### Processed Data and Results
+1. **`context_analysis.py` — Historical Twin Matching:** Retrieves training-only reference cohorts (`t <= 2010-02-05 05:15:00`, `N_train = 109,347`) matching circular hour tolerance (`d_h <= 1`), identical `is_weekend` flag, and circular month proximity (`d_m <= 1`, with fallback to hour × weekend when cohort size `< 50`). Computes `context_expected_median_kw`, `context_abs_deviation_kw`, `context_percentile`, `context_z_score`, and `context_cohort_size`.
+2. **`shap_explainer.py` — TreeSHAP Path-Length Inversion:** Runs `shap.TreeExplainer` over the 200-tree `IsolationForest` predicting average isolation path length `h(x)` (baseline `phi_0 = 11.949459` depth levels) and inverts sign (`phi_anom = -phi_path`) so positive values reflect features pushing towards anomaly severity. Local additivity holds within `<= 2.75e-14` relative to model predictions.
+3. **`explanation_generator.py` — Deterministic Evidence-Bounded Diagnostics:** Categorizes SHAP features directionally (contributing towards severity `phi >= +0.05`, towards normality `phi <= -0.05`, or negligible `|phi| < 0.05`) and reports observed sub-circuit telemetry without inventing causal fault diagnoses or unmeasured appliance claims.
+4. **`context_aware_xai.py` — Master XAI Pipeline:** Merges all four model results across the **333 candidate timestamps** (`242` single-model, `50` two-model, `37` three-model, `4` four-model consensus; `6` shared between LSTM Predictor and LSTM Autoencoder = `1.80%`) and generates the CSV, JSON, PNG, and Markdown deliverables below.
 
-- **`household_15min_features.csv`:** Cleaned 15-minute dataset and engineered features.
-- **`statistical_baseline_results.csv`:** Expected consumption, deviations, thresholds, and anomaly flags.
-- **`isolation_forest_results.csv`:** Isolation Forest scores and anomaly flags.
-- **`lstm_prediction_results.csv`:** Actual and predicted power, prediction errors, and flags.
-- **`lstm_autoencoder_results.csv`:** Reconstruction errors and flags.
-- **`classical_model_comparison.csv`:** Comparison of the statistical baseline and Isolation Forest.
-- **`deep_learning_model_comparison.csv`:** Comparison of the two LSTM methods.
-- **`model_evaluation_metrics.csv`:** MAE and RMSE values.
-- **`model_metadata.json`:** Model settings and anomaly thresholds.
+### Phase 3 Validation Experiments (`experiments/`)
+
+| Folder | Experiment | Key Verified Finding |
+| :--- | :--- | :--- |
+| `experiments/phase3_context_matching/` | Reference Strategy Comparison | Dynamic Twins lower mean contextual deviation across the 333 candidates to **2.2097 kW** (vs. **2.7412 kW** global baseline, `-19.4%`; **2.2798 kW** static hour-weekend), median cohort **2,340**, `0/333` fallbacks. |
+| `experiments/phase3_context_sensitivity/` | `3 × 2` Window & Seasonality Grid | Evaluated `h in {0, 1, 2} × Season in {Off, On}`; cohort sizes scale `1 : 3 : 5`, `sigma_min = 0.3363 kW`, preventing winter/summer baseline bias (`+0.962` / `-0.705 kW`). |
+| `experiments/phase3_shap_stability/` | Deterministic Tree Subset Convergence | Nested subsets `K in {25, 50, 100, 150}` converge monotonically to the 200-tree reference (Spearman `rho`: `0.8706 -> 0.9971`, 100% Top-5 overlap at `K >= 100`). |
+| `experiments/phase3_shap_randomized_stability/` | 20-Seed Monte Carlo TreeSHAP Check | Across `80` randomized draws (`20 × 4` sizes), `K = 150` achieves `rho = 0.9957 ± 0.0031` and **95.0%** exact Top-5 recovery with zero prefix-ordering bias (`<= 1.84e-14` additivity error). |
+| `experiments/phase3_shap_dependence/` | Collinearity & Grouped Attribution | `Global_active_power` and `Global_intensity` correlate at `r = 0.9994`; post-hoc grouped attribution `phi_bulk = phi_P + phi_I` averages **1.0540 path-length units** (`+37.9%` above rank-1 `Sub_metering_2`). |
+| `experiments/phase3_explanation_semantic_audit/` | Audit & Partition Reconciliation | Verified **333/333** candidates strictly in test partition (`0` in train, zero lookahead leakage) and surfaced `78` baseline template warnings across `73` events. |
+| `experiments/phase3_explanation_remediation/` | Explanation Quality Remediation | Resolved all `78` wording warnings (directional SHAP headings + evidence-bounded residual load phrasing) achieving **333/333 PASS (`0 WARNING`, `0 FAIL`)**. |
+| `experiments/phase3_final_integration/` | Cross-Experiment Integration Audit | Confirmed `<= 8.88e-16` tabular float parity against `outputs_backup_phase3/`, frozen artifact integrity, and full test pass coverage. |
+
+## 10. Generated Output Files
+
+All outputs are stored in `outputs/` (with pre-remediation baselines preserved in `outputs_backup_phase3/`):
+
+### Processed Data, Model Results & XAI Records
+
+- **`household_15min_features.csv`:** Cleaned 15-minute dataset and 16+ engineered features (`136,684` rows).
+- **`statistical_baseline_results.csv`**, **`isolation_forest_results.csv`**, **`lstm_prediction_results.csv`**, **`lstm_autoencoder_results.csv`:** Test-partition anomaly scores, thresholds, and boolean flags (`27,337` rows each).
+- **`classical_model_comparison.csv`**, **`deep_learning_model_comparison.csv`**, **`model_evaluation_metrics.csv`**, **`model_metadata.json`:** Model summaries, MAE/RMSE metrics, and saved cutoffs.
+- **`contextual_anomalies.csv`:** Master table across all `333` candidate events including model flags, consensus count, historical twin cohort size/median/deviation/percentile/Z-score, sub-metering readings, top SHAP features, and audited diagnostic summaries.
+- **`explanations.json`:** Structured JSON records for all `333` candidate anomalies.
+- **`xai_execution_report.md`:** Summary report of candidate census, global TreeSHAP feature rankings, and the showcase four-way consensus case study (`2010-04-11 20:45:00`).
 
 ### Saved Models
 
-- **`isolation_forest_model.joblib`:** Saved Isolation Forest model.
-- **`power_scaler.joblib`:** Fitted power-scaling object.
-- **`lstm_prediction_model.keras`:** Saved LSTM predictor.
-- **`lstm_autoencoder_model.keras`:** Saved LSTM autoencoder.
+- **`isolation_forest_model.joblib`:** Saved 200-tree Isolation Forest model.
+- **`power_scaler.joblib`:** Fitted MinMax scaler object.
+- **`lstm_prediction_model.keras`:** Saved Next-Step LSTM Regressor.
+- **`lstm_autoencoder_model.keras`:** Saved LSTM Sequence Autoencoder.
 
-### Generated Graphs
+### Generated Visualizations
 
 - **`consumption_first_week.png`:** Consumption changes over the first week of available data.
 - **`average_consumption_by_hour.png`:** Average consumption for each hour of the day.
@@ -304,63 +325,77 @@ All results are saved in the `outputs/` directory.
 - **`lstm_prediction_error_distribution.png`:** Distribution of LSTM prediction errors.
 - **`deep_learning_model_comparison.png`:** Flagged percentages for the LSTM models.
 - **`lstm_prediction_plot.png`:** Actual versus predicted consumption, with flagged readings highlighted.
+- **`shap_summary.png`:** Global mean absolute TreeSHAP feature importance across the `333` candidates (`Sub_metering_2 = 0.7644`, `rolling_std_4 = 0.6584`, `Global_intensity = 0.5600`).
+- **`individual_anomaly_explanation.png`:** Local TreeSHAP severity attribution profile for showcase consensus event `2010-04-11 20:45:00`.
 
-The CSV files allow individual candidate events to be inspected. Where a results file contains anomaly scores, sorting by score helps identify the most unusual readings according to that model.
+## 11. Repository Structure
 
-## 10. Technologies Used
+```text
+├── household_energy_anomaly_detection.py   # End-to-end preprocessing, training & baseline evaluation
+├── context_analysis.py                     # Leak-free Historical Twin cohort matching
+├── shap_explainer.py                       # TreeSHAP isolation path-length inversion
+├── explanation_generator.py                # Directionally categorized, evidence-bounded NLG
+├── context_aware_xai.py                    # Master XAI pipeline orchestrator
+├── outputs/                                # Models, test results, XAI CSV/JSON & figures
+├── outputs_backup_phase3/                  # Preserved pre-remediation baseline outputs
+├── experiments/                            # Phase 3 validation experiments (scripts, logs, CSVs, reports)
+└── tests/                                  # Automated pytest regression & verification suite
+```
 
-- **Python:** Overall implementation.
-- **Pandas and NumPy:** Data processing, feature engineering, and numerical calculations.
-- **Scikit-learn:** Isolation Forest, scaling, and regression metrics.
-- **TensorFlow/Keras:** LSTM prediction and autoencoder models.
-- **Matplotlib:** Graph generation.
-- **Joblib:** Saving trained models and preprocessing objects.
+## 12. Technologies Used
 
-## 11. How to Run the Project
+- **Python 3.12:** Core implementation and orchestration.
+- **Pandas, NumPy & SciPy:** Time-series resampling, feature engineering, contextual cohort statistics, and rank correlations.
+- **Scikit-learn & Joblib:** Isolation Forest modeling, feature standardization/scaling, and model serialization.
+- **TensorFlow / Keras:** LSTM predictor and sequence autoencoder architectures.
+- **SHAP (`TreeExplainer`):** Exact tree path-length game-theoretic feature attributions.
+- **Matplotlib & Pytest:** Diagnostic visualizations and automated regression verification.
+
+## 13. How to Run and Test the Project
 
 ### Install Dependencies
 
+```bash
+pip install pandas numpy scipy matplotlib scikit-learn tensorflow joblib shap pytest
 ```
-pip install pandas numpy matplotlib scikit-learn tensorflow joblib
-```
 
-### Download the Dataset
+### Download the Dataset & Run Base Models *(Optional — Precomputed Outputs Included)*
 
-Download the dataset from the [official UCI repository](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption) and place the text file in your project directory.
+Download `household_power_consumption.txt` from the [official UCI repository](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption), place it in the project root, and run:
 
-### Run the Pipeline
-
-If your downloaded file is named `household_power_consumption.txt`:
-
-```
+```bash
 python .\household_energy_anomaly_detection.py --input ".\household_power_consumption.txt"
 ```
 
-If your local file is still named `household_power_consumption (1).txt`, use:
+### Run the Context-Aware XAI Pipeline
 
+Using the serialized models and CSVs already stored in `outputs/`:
+
+```bash
+python .\context_aware_xai.py
 ```
-python .\household_energy_anomaly_detection.py --input ".\household_power_consumption (1).txt"
+
+This regenerates `contextual_anomalies.csv`, `explanations.json`, `shap_summary.png`, `individual_anomaly_explanation.png`, and `xai_execution_report.md` inside `outputs/`.
+
+### Run Automated Verification Tests
+
+```bash
+python -m pytest -v tests/
 ```
 
-The script creates the `outputs/` directory if necessary, preprocesses the data, trains the models, calculates evaluation metrics, and saves results and graphs.
+All `54` functional, mathematical additivity, cohort-leakage, collinearity, and semantic-audit tests pass against the repository outputs (`7` manuscript-freeze checks skip automatically when unpublished manuscript drafts are excluded).
 
-TensorFlow CPU support is sufficient for the configuration used in your successful run. A GPU warning does not necessarily indicate a training failure.
+## 14. Conclusion
 
-## 12. Conclusion
+This project delivers a reproducible household electricity anomaly detection and Context-Aware Explainable AI framework over **136,684 uniform 15-minute intervals** (`109,347` training / `27,337` test). Integrating four diverse detectors (`333` candidate alerts) with training-only Historical Twin Matching, mathematically verified TreeSHAP path-length inversion, collinear bulk attribution grouping, and semantic quality checks converts uncalibrated anomaly scores into transparent, evidence-bounded diagnostics without overfitting or lookahead leakage.
 
-This project implements an end-to-end household electricity anomaly-detection pipeline using statistical methods, Isolation Forest, and two LSTM-based approaches.
-
-It processes the original UCI dataset into **136,684 15-minute observations** and evaluates the models on **27,337 later observations**. It then saves candidate anomaly results, evaluation metrics, trained models, and visualisations.
-
-The main objective is to identify electricity readings that deserve further investigation. Future improvements can include validating flagged events, improving feature construction for real-time prediction, testing longer historical sequences, and evaluating the models against verified anomaly labels.
-
-**The current results confirm successful pipeline execution, but further validation is required to establish anomaly-detection accuracy.**
+**Note:** Because the underlying UCI dataset contains no verified fault labels, flagged events and explanations indicate statistical and contextual anomalies deserving investigation rather than confirmed appliance defects.
 
 ## References
 
 1. UCI Machine Learning Repository: [https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption)
-2. Liu, Ting and Zhou, *Isolation Forest*, 2008.
-3. Hochreiter and Schmidhuber, *Long Short-Term Memory*, 1997.
-4. TensorFlow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
-5. Scikit-learn: [https://scikit-learn.org/](https://scikit-learn.org/)
+2. Liu, F.T., Ting, K.M., Zhou, Z.-H.: *Isolation Forest*, IEEE ICDM (2008).
+3. Hochreiter, S., Schmidhuber, J.: *Long Short-Term Memory*, Neural Computation (1997).
+4. Lundberg, S.M. et al.: *From local explanations to global understanding with explainable AI for trees*, Nature Machine Intelligence (2020).
+5. TensorFlow & Scikit-learn documentation: [tensorflow.org](https://www.tensorflow.org/), [scikit-learn.org](https://scikit-learn.org/)
 

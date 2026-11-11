@@ -1,0 +1,86 @@
+{
+  "experiment_id": "EXP-PHASE3-XAI-06B",
+  "timestamp": "2026-11-07 20:38:04",
+  "total_anomalies_audited": 333,
+  "overall_status_counts": {
+    "PASS": 333,
+    "WARNING": 0,
+    "FAIL": 0
+  },
+  "dimension_status_counts": {
+    "audit_a_record_completeness": {
+      "PASS": 333,
+      "WARNING": 0,
+      "FAIL": 0
+    },
+    "audit_b_shap_directional": {
+      "PASS": 333,
+      "WARNING": 0,
+      "FAIL": 0
+    },
+    "audit_c_consensus_consistency": {
+      "PASS": 333,
+      "WARNING": 0,
+      "FAIL": 0
+    },
+    "audit_d_contextual_reference": {
+      "PASS": 333,
+      "WARNING": 0,
+      "FAIL": 0
+    },
+    "audit_e_scientific_validity": {
+      "PASS": 333,
+      "WARNING": 0,
+      "FAIL": 0
+    }
+  },
+  "issue_category_counts": {
+    "unsupported_appliance_attribution": 0,
+    "unsupported_causal_claim": 0,
+    "unsupported_household_behaviour_claim": 0,
+    "incorrect_circuit_mapping": 0,
+    "unsupported_fault_diagnosis": 0,
+    "other_scientific_terminology_issue": 0,
+    "unverified_general_circuit_hypothesis": 0,
+    "negative_or_negligible_shap_feature_cited": 0,
+    "misleading_shap_direction": 0,
+    "shap_units_incorrect": 0,
+    "temporal_partition_leakage": 0,
+    "record_completeness_failure": 0
+  },
+  "remediation_summary": {
+    "unmetered_telemetry_warnings_before": 73,
+    "unmetered_telemetry_warnings_after": 0,
+    "unmetered_telemetry_remediated_count": 73,
+    "shap_directional_warnings_before": 5,
+    "shap_directional_warnings_after": 0,
+    "shap_directional_remediated_count": 5,
+    "total_issue_warnings_before": 78,
+    "unique_candidate_events_with_warnings_before": 73,
+    "total_warnings_after": 0,
+    "clean_explanations_count_before": 260,
+    "clean_explanations_count_after": 333,
+    "pass_rate_percentage_before": 78.08,
+    "pass_rate_percentage_after": 100.0
+  },
+  "consensus_reconciliation": {
+    "1_model_isolated_flags": 242,
+    "2_model_agreement": 50,
+    "3_model_consensus": 37,
+    "4_model_consensus": 4,
+    "total_candidates": 333
+  },
+  "chronological_partition_integrity": {
+    "training_period_end": "2010-02-05 05:15:00",
+    "test_period_start": "2010-02-05 05:30:00",
+    "candidate_timestamps_in_test_partition": 333,
+    "candidate_timestamps_in_training_partition": 0,
+    "temporal_leakage_detected": false
+  },
+  "master_paper_freeze": {
+    "file": "research_paper/complete_ieee_paper.md",
+    "expected_bytes": 122229,
+    "actual_bytes": 122229,
+    "freeze_intact": true
+  }
+}

@@ -1,6 +1,11 @@
+# Raw UCI dataset
+household_power_consumption*.txt
 
-household_power_consumption (1).txt
+# Python & test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
 
-household_power_consumption (1).txt
-
-household_power_consumption (1).txt
+# Backups & temporary scratch
+*.bak
+scratch/

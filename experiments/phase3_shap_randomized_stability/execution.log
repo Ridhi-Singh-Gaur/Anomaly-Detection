@@ -1,0 +1,91 @@
+2026-11-07 16:11:36,371 [INFO] ============================================================================
+2026-11-07 16:11:36,372 [INFO] MEMBER 4 - PHASE 3: RANDOMIZED TREESHAP STABILITY VALIDATION
+2026-11-07 16:11:36,372 [INFO] Experiment ID: EXP-PHASE3-SHAP-04
+2026-11-07 16:11:36,372 [INFO] ============================================================================
+2026-11-07 16:11:36,572 [INFO] Loaded reference Isolation Forest model: 200 trees, 16 features
+2026-11-07 16:11:37,766 [INFO] Evaluation sample: 433 instances (333 candidates + 100 normal)
+2026-11-07 16:11:37,783 [INFO] 
+Computing reference 200-tree TreeSHAP baseline...
+2026-11-07 16:11:41,923 [INFO] Reference Top 5: ['Sub_metering_2', 'rolling_std_4', 'Global_intensity', 'Sub_metering_1', 'Global_active_power']
+2026-11-07 16:11:41,923 [INFO] 
+========================================================
+2026-11-07 16:11:41,923 [INFO] Evaluating K = 25 trees across 20 randomized subset trials
+2026-11-07 16:11:41,924 [INFO] ========================================================
+2026-11-07 16:11:43,686 [INFO]   [K= 25 Trial 01/20] Rho=0.9471 | Cosine=0.9900 | Top5 Overlap=80% | Sample Cosine=0.9421
+2026-11-07 16:11:48,773 [INFO]   [K= 25 Trial 05/20] Rho=0.9176 | Cosine=0.9472 | Top5 Overlap=80% | Sample Cosine=0.9133
+2026-11-07 16:11:53,787 [INFO]   [K= 25 Trial 10/20] Rho=0.9294 | Cosine=0.9659 | Top5 Overlap=80% | Sample Cosine=0.9184
+2026-11-07 16:11:58,582 [INFO]   [K= 25 Trial 15/20] Rho=0.9206 | Cosine=0.9793 | Top5 Overlap=100% | Sample Cosine=0.9265
+2026-11-07 16:12:03,119 [INFO]   [K= 25 Trial 20/20] Rho=0.9500 | Cosine=0.9881 | Top5 Overlap=100% | Sample Cosine=0.9292
+2026-11-07 16:12:03,119 [INFO] 
+========================================================
+2026-11-07 16:12:03,119 [INFO] Evaluating K = 50 trees across 20 randomized subset trials
+2026-11-07 16:12:03,120 [INFO] ========================================================
+2026-11-07 16:12:04,645 [INFO]   [K= 50 Trial 01/20] Rho=0.9618 | Cosine=0.9800 | Top5 Overlap=100% | Sample Cosine=0.9632
+2026-11-07 16:12:10,150 [INFO]   [K= 50 Trial 05/20] Rho=0.9824 | Cosine=0.9903 | Top5 Overlap=100% | Sample Cosine=0.9702
+2026-11-07 16:12:17,099 [INFO]   [K= 50 Trial 10/20] Rho=0.9853 | Cosine=0.9825 | Top5 Overlap=80% | Sample Cosine=0.9654
+2026-11-07 16:12:24,407 [INFO]   [K= 50 Trial 15/20] Rho=0.9853 | Cosine=0.9924 | Top5 Overlap=100% | Sample Cosine=0.9692
+2026-11-07 16:12:31,378 [INFO]   [K= 50 Trial 20/20] Rho=0.9647 | Cosine=0.9876 | Top5 Overlap=100% | Sample Cosine=0.9669
+2026-11-07 16:12:31,383 [INFO] 
+========================================================
+2026-11-07 16:12:31,383 [INFO] Evaluating K = 100 trees across 20 randomized subset trials
+2026-11-07 16:12:31,384 [INFO] ========================================================
+2026-11-07 16:12:33,970 [INFO]   [K=100 Trial 01/20] Rho=0.9912 | Cosine=0.9947 | Top5 Overlap=100% | Sample Cosine=0.9859
+2026-11-07 16:12:44,242 [INFO]   [K=100 Trial 05/20] Rho=0.9824 | Cosine=0.9961 | Top5 Overlap=80% | Sample Cosine=0.9883
+2026-11-07 16:12:56,863 [INFO]   [K=100 Trial 10/20] Rho=0.9912 | Cosine=0.9945 | Top5 Overlap=100% | Sample Cosine=0.9885
+2026-11-07 16:13:09,495 [INFO]   [K=100 Trial 15/20] Rho=0.9824 | Cosine=0.9984 | Top5 Overlap=100% | Sample Cosine=0.9875
+2026-11-07 16:13:23,249 [INFO]   [K=100 Trial 20/20] Rho=0.9912 | Cosine=0.9957 | Top5 Overlap=100% | Sample Cosine=0.9891
+2026-11-07 16:13:23,250 [INFO] 
+========================================================
+2026-11-07 16:13:23,250 [INFO] Evaluating K = 150 trees across 20 randomized subset trials
+2026-11-07 16:13:23,250 [INFO] ========================================================
+2026-11-07 16:13:27,050 [INFO]   [K=150 Trial 01/20] Rho=0.9941 | Cosine=0.9984 | Top5 Overlap=100% | Sample Cosine=0.9957
+2026-11-07 16:13:41,493 [INFO]   [K=150 Trial 05/20] Rho=0.9971 | Cosine=0.9991 | Top5 Overlap=100% | Sample Cosine=0.9960
+2026-11-07 16:13:59,346 [INFO]   [K=150 Trial 10/20] Rho=1.0000 | Cosine=0.9987 | Top5 Overlap=100% | Sample Cosine=0.9963
+2026-11-07 16:14:17,819 [INFO]   [K=150 Trial 15/20] Rho=0.9971 | Cosine=0.9989 | Top5 Overlap=100% | Sample Cosine=0.9966
+2026-11-07 16:14:37,629 [INFO]   [K=150 Trial 20/20] Rho=0.9971 | Cosine=0.9991 | Top5 Overlap=100% | Sample Cosine=0.9959
+2026-11-07 16:14:37,670 [INFO] 
+Saved randomized runs summary CSV (80 runs): randomized_runs_summary.csv
+2026-11-07 16:14:37,671 [INFO] 
+Aggregating statistical convergence metrics across randomized trials...
+2026-11-07 16:14:37,684 [INFO] 
+[SUMMARY K= 25]
+2026-11-07 16:14:37,684 [INFO]   Spearman Rho: Mean = 0.9343 +/- 0.0216 (95% CI: [0.9242, 0.9444], Range: [0.8853, 0.9676])
+2026-11-07 16:14:37,684 [INFO]   Cosine Sim:   Mean = 0.976122 +/- 0.011601 (95% CI: [0.970692, 0.981552], Range: [0.947189, 0.989979])
+2026-11-07 16:14:37,684 [INFO]   Top-5 Overlap: Mean = 86.0% | Exact Set Recovery Rate = 45.0% | Exact Ordered = 5.0%
+2026-11-07 16:14:37,684 [INFO]   Sample Cosine: Mean = 0.9272 +/- 0.0085 (95% CI: [0.9232, 0.9311])
+2026-11-07 16:14:37,685 [INFO]   Exp 3 Prefix Fall within Random Range: Rho=False, Cosine=True
+2026-11-07 16:14:37,690 [INFO] 
+[SUMMARY K= 50]
+2026-11-07 16:14:37,690 [INFO]   Spearman Rho: Mean = 0.9735 +/- 0.0155 (95% CI: [0.9663, 0.9808], Range: [0.9382, 0.9971])
+2026-11-07 16:14:37,690 [INFO]   Cosine Sim:   Mean = 0.988893 +/- 0.006055 (95% CI: [0.986059, 0.991727], Range: [0.974603, 0.995749])
+2026-11-07 16:14:37,691 [INFO]   Top-5 Overlap: Mean = 93.0% | Exact Set Recovery Rate = 65.0% | Exact Ordered = 15.0%
+2026-11-07 16:14:37,691 [INFO]   Sample Cosine: Mean = 0.9674 +/- 0.0051 (95% CI: [0.9650, 0.9698])
+2026-11-07 16:14:37,691 [INFO]   Exp 3 Prefix Fall within Random Range: Rho=False, Cosine=False
+2026-11-07 16:14:37,695 [INFO] 
+[SUMMARY K=100]
+2026-11-07 16:14:37,695 [INFO]   Spearman Rho: Mean = 0.9891 +/- 0.0076 (95% CI: [0.9855, 0.9927], Range: [0.9706, 0.9971])
+2026-11-07 16:14:37,696 [INFO]   Cosine Sim:   Mean = 0.996415 +/- 0.001875 (95% CI: [0.995537, 0.997292], Range: [0.992951, 0.998933])
+2026-11-07 16:14:37,696 [INFO]   Top-5 Overlap: Mean = 98.0% | Exact Set Recovery Rate = 90.0% | Exact Ordered = 35.0%
+2026-11-07 16:14:37,696 [INFO]   Sample Cosine: Mean = 0.9885 +/- 0.0019 (95% CI: [0.9876, 0.9893])
+2026-11-07 16:14:37,696 [INFO]   Exp 3 Prefix Fall within Random Range: Rho=True, Cosine=True
+2026-11-07 16:14:37,701 [INFO] 
+[SUMMARY K=150]
+2026-11-07 16:14:37,701 [INFO]   Spearman Rho: Mean = 0.9957 +/- 0.0031 (95% CI: [0.9943, 0.9972], Range: [0.9882, 1.0000])
+2026-11-07 16:14:37,702 [INFO]   Cosine Sim:   Mean = 0.998476 +/- 0.000805 (95% CI: [0.998099, 0.998853], Range: [0.996120, 0.999430])
+2026-11-07 16:14:37,702 [INFO]   Top-5 Overlap: Mean = 99.0% | Exact Set Recovery Rate = 95.0% | Exact Ordered = 60.0%
+2026-11-07 16:14:37,702 [INFO]   Sample Cosine: Mean = 0.9960 +/- 0.0006 (95% CI: [0.9958, 0.9963])
+2026-11-07 16:14:37,702 [INFO]   Exp 3 Prefix Fall within Random Range: Rho=True, Cosine=True
+2026-11-07 16:14:37,707 [INFO] Saved randomized stability summary CSV: randomized_stability_summary.csv
+2026-11-07 16:14:37,709 [INFO] 
+Computing feature selection frequencies and rank stability...
+2026-11-07 16:14:37,727 [INFO] Saved feature top-5 frequency stability CSV: feature_top5_frequency_stability.csv
+2026-11-07 16:14:37,728 [INFO] 
+Generating publication figures...
+2026-11-07 16:14:41,014 [INFO] Saved Figure 1: randomized_ensemble_convergence.png
+2026-11-07 16:14:41,149 [WARNING] findfont: Failed to find font weight semibold for DejaVu Sans, now using 700.
+2026-11-07 16:14:41,185 [WARNING] findfont: Failed to find font weight semibold for DejaVu Sans, now using 700.
+2026-11-07 16:14:42,288 [INFO] Saved Figure 2: feature_top5_selection_frequency.png
+2026-11-07 16:14:42,288 [INFO] 
+============================================================================
+2026-11-07 16:14:42,289 [INFO] EXP-PHASE3-SHAP-04 EXPERIMENT COMPLETED SUCCESSFULLY
+2026-11-07 16:14:42,289 [INFO] ============================================================================

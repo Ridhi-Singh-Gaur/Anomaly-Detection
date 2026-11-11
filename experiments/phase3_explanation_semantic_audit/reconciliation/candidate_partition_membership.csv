@@ -1,0 +1,334 @@
+candidate_index,timestamp,partition_membership,dataset_global_index,test_slice_relative_index,is_in_training_partition,is_in_test_partition,models_flagged_count,consensus_level,temporal_gap_from_train_end_hours,historical_cohort_training_only,context_cohort_size
+0,2010-02-05 06:45:00,Original test partition,109352,5,False,True,1,Isolated Flag (LSTM_Prediction),1.5,True,2606
+1,2010-02-06 18:45:00,Original test partition,109496,149,False,True,3,Three-Way Multi-Model Consensus,37.5,True,1044
+2,2010-02-06 19:00:00,Original test partition,109497,150,False,True,2,Two-Model Agreement,37.75,True,1044
+3,2010-02-06 19:30:00,Original test partition,109499,152,False,True,1,Isolated Flag (LSTM_Autoencoder),38.25,True,1044
+4,2010-02-06 23:00:00,Original test partition,109513,166,False,True,2,Two-Model Agreement,41.75,True,1044
+5,2010-02-06 23:15:00,Original test partition,109514,167,False,True,1,Isolated Flag (Statistical_Baseline),42.0,True,1044
+6,2010-02-07 02:30:00,Original test partition,109527,180,False,True,1,Isolated Flag (LSTM_Autoencoder),45.25,True,1044
+7,2010-02-07 14:45:00,Original test partition,109576,229,False,True,1,Isolated Flag (LSTM_Prediction),57.5,True,1044
+8,2010-02-07 18:45:00,Original test partition,109592,245,False,True,1,Isolated Flag (LSTM_Prediction),61.5,True,1044
+9,2010-02-09 21:00:00,Original test partition,109793,446,False,True,1,Isolated Flag (LSTM_Prediction),111.75,True,2604
+10,2010-02-12 06:30:00,Original test partition,110023,676,False,True,1,Isolated Flag (LSTM_Prediction),169.25,True,2606
+11,2010-02-13 12:15:00,Original test partition,110142,795,False,True,1,Isolated Flag (LSTM_Prediction),199.0,True,1044
+12,2010-02-13 12:30:00,Original test partition,110143,796,False,True,4,Four-Model Consensus Candidate Anomaly,199.25,True,1044
+13,2010-02-13 12:45:00,Original test partition,110144,797,False,True,2,Two-Model Agreement,199.5,True,1044
+14,2010-02-13 13:00:00,Original test partition,110145,798,False,True,2,Two-Model Agreement,199.75,True,1044
+15,2010-02-13 13:15:00,Original test partition,110146,799,False,True,1,Isolated Flag (LSTM_Autoencoder),200.0,True,1044
+16,2010-02-13 13:30:00,Original test partition,110147,800,False,True,1,Isolated Flag (LSTM_Autoencoder),200.25,True,1044
+17,2010-02-13 14:00:00,Original test partition,110149,802,False,True,2,Two-Model Agreement,200.75,True,1044
+18,2010-02-13 14:15:00,Original test partition,110150,803,False,True,2,Two-Model Agreement,201.0,True,1044
+19,2010-02-15 19:00:00,Original test partition,110361,1014,False,True,1,Isolated Flag (LSTM_Prediction),253.75,True,2600
+20,2010-02-15 20:15:00,Original test partition,110366,1019,False,True,3,Three-Way Multi-Model Consensus,255.0,True,2604
+21,2010-02-15 20:30:00,Original test partition,110367,1020,False,True,1,Isolated Flag (Isolation_Forest),255.25,True,2604
+22,2010-02-15 20:45:00,Original test partition,110368,1021,False,True,1,Isolated Flag (Isolation_Forest),255.5,True,2604
+23,2010-02-15 21:00:00,Original test partition,110369,1022,False,True,2,Two-Model Agreement,255.75,True,2604
+24,2010-02-15 21:15:00,Original test partition,110370,1023,False,True,1,Isolated Flag (Isolation_Forest),256.0,True,2604
+25,2010-02-16 06:45:00,Original test partition,110408,1061,False,True,1,Isolated Flag (LSTM_Prediction),265.5,True,2606
+26,2010-02-17 09:30:00,Original test partition,110515,1168,False,True,1,Isolated Flag (LSTM_Prediction),292.25,True,2604
+27,2010-02-17 12:00:00,Original test partition,110525,1178,False,True,3,Three-Way Multi-Model Consensus,294.75,True,2604
+28,2010-02-17 12:15:00,Original test partition,110526,1179,False,True,3,Three-Way Multi-Model Consensus,295.0,True,2604
+29,2010-02-17 14:45:00,Original test partition,110536,1189,False,True,2,Two-Model Agreement,297.5,True,2604
+30,2010-02-17 15:00:00,Original test partition,110537,1190,False,True,1,Isolated Flag (LSTM_Autoencoder),297.75,True,2600
+31,2010-02-17 15:30:00,Original test partition,110539,1192,False,True,1,Isolated Flag (LSTM_Autoencoder),298.25,True,2600
+32,2010-02-18 06:45:00,Original test partition,110600,1253,False,True,1,Isolated Flag (LSTM_Prediction),313.5,True,2606
+33,2010-02-20 10:45:00,Original test partition,110808,1461,False,True,1,Isolated Flag (LSTM_Prediction),365.5,True,1044
+34,2010-02-20 18:00:00,Original test partition,110837,1490,False,True,1,Isolated Flag (LSTM_Prediction),372.75,True,1044
+35,2010-02-20 18:15:00,Original test partition,110838,1491,False,True,1,Isolated Flag (LSTM_Autoencoder),373.0,True,1044
+36,2010-02-21 11:00:00,Original test partition,110905,1558,False,True,3,Three-Way Multi-Model Consensus,389.75,True,1044
+37,2010-02-21 11:15:00,Original test partition,110906,1559,False,True,4,Four-Model Consensus Candidate Anomaly,390.0,True,1044
+38,2010-02-21 11:30:00,Original test partition,110907,1560,False,True,2,Two-Model Agreement,390.25,True,1044
+39,2010-02-21 12:00:00,Original test partition,110909,1562,False,True,2,Two-Model Agreement,390.75,True,1044
+40,2010-02-21 12:15:00,Original test partition,110910,1563,False,True,1,Isolated Flag (LSTM_Autoencoder),391.0,True,1044
+41,2010-02-21 13:45:00,Original test partition,110916,1569,False,True,1,Isolated Flag (LSTM_Prediction),392.5,True,1044
+42,2010-02-21 14:00:00,Original test partition,110917,1570,False,True,3,Three-Way Multi-Model Consensus,392.75,True,1044
+43,2010-02-21 14:15:00,Original test partition,110918,1571,False,True,2,Two-Model Agreement,393.0,True,1044
+44,2010-02-21 15:00:00,Original test partition,110921,1574,False,True,1,Isolated Flag (Isolation_Forest),393.75,True,1044
+45,2010-02-21 15:15:00,Original test partition,110922,1575,False,True,3,Three-Way Multi-Model Consensus,394.0,True,1044
+46,2010-02-21 15:30:00,Original test partition,110923,1576,False,True,2,Two-Model Agreement,394.25,True,1044
+47,2010-02-21 15:45:00,Original test partition,110924,1577,False,True,1,Isolated Flag (LSTM_Prediction),394.5,True,1044
+48,2010-02-21 16:00:00,Original test partition,110925,1578,False,True,1,Isolated Flag (LSTM_Autoencoder),394.75,True,1044
+49,2010-02-21 16:15:00,Original test partition,110926,1579,False,True,1,Isolated Flag (LSTM_Autoencoder),395.0,True,1044
+50,2010-02-21 16:30:00,Original test partition,110927,1580,False,True,1,Isolated Flag (LSTM_Autoencoder),395.25,True,1044
+51,2010-02-22 06:45:00,Original test partition,110984,1637,False,True,2,Two-Model Agreement,409.5,True,2606
+52,2010-02-22 07:00:00,Original test partition,110985,1638,False,True,1,Isolated Flag (LSTM_Autoencoder),409.75,True,2604
+53,2010-02-23 18:45:00,Original test partition,111128,1781,False,True,1,Isolated Flag (LSTM_Prediction),445.5,True,2596
+54,2010-02-23 21:45:00,Original test partition,111140,1793,False,True,3,Three-Way Multi-Model Consensus,448.5,True,2604
+55,2010-02-23 22:00:00,Original test partition,111141,1794,False,True,3,Three-Way Multi-Model Consensus,448.75,True,2604
+56,2010-02-23 22:15:00,Original test partition,111142,1795,False,True,1,Isolated Flag (LSTM_Autoencoder),449.0,True,2604
+57,2010-02-23 22:30:00,Original test partition,111143,1796,False,True,1,Isolated Flag (LSTM_Autoencoder),449.25,True,2604
+58,2010-02-23 22:45:00,Original test partition,111144,1797,False,True,1,Isolated Flag (LSTM_Autoencoder),449.5,True,2604
+59,2010-02-23 23:00:00,Original test partition,111145,1798,False,True,1,Isolated Flag (LSTM_Autoencoder),449.75,True,2608
+60,2010-02-24 08:00:00,Original test partition,111181,1834,False,True,1,Isolated Flag (LSTM_Prediction),458.75,True,2604
+61,2010-02-24 08:15:00,Original test partition,111182,1835,False,True,1,Isolated Flag (Isolation_Forest),459.0,True,2604
+62,2010-02-26 22:15:00,Original test partition,111430,2083,False,True,2,Two-Model Agreement,521.0,True,2604
+63,2010-03-01 11:15:00,Original test partition,111674,2327,False,True,1,Isolated Flag (LSTM_Prediction),582.0,True,2328
+64,2010-03-01 23:00:00,Original test partition,111721,2374,False,True,1,Isolated Flag (LSTM_Autoencoder),593.75,True,2340
+65,2010-03-05 14:45:00,Original test partition,112072,2725,False,True,2,Two-Model Agreement,681.5,True,2335
+66,2010-03-07 17:00:00,Original test partition,112273,2926,False,True,2,Two-Model Agreement,731.75,True,900
+67,2010-03-07 17:15:00,Original test partition,112274,2927,False,True,1,Isolated Flag (LSTM_Autoencoder),732.0,True,900
+68,2010-03-07 17:45:00,Original test partition,112276,2929,False,True,1,Isolated Flag (LSTM_Autoencoder),732.5,True,900
+69,2010-03-08 07:45:00,Original test partition,112332,2985,False,True,1,Isolated Flag (LSTM_Prediction),746.5,True,2328
+70,2010-03-08 08:00:00,Original test partition,112333,2986,False,True,1,Isolated Flag (Statistical_Baseline),746.75,True,2328
+71,2010-03-08 09:00:00,Original test partition,112337,2990,False,True,3,Three-Way Multi-Model Consensus,747.75,True,2328
+72,2010-03-08 09:15:00,Original test partition,112338,2991,False,True,2,Two-Model Agreement,748.0,True,2328
+73,2010-03-08 09:45:00,Original test partition,112340,2993,False,True,1,Isolated Flag (LSTM_Autoencoder),748.5,True,2328
+74,2010-03-08 10:00:00,Original test partition,112341,2994,False,True,1,Isolated Flag (LSTM_Autoencoder),748.75,True,2328
+75,2010-03-08 12:00:00,Original test partition,112349,3002,False,True,2,Two-Model Agreement,750.75,True,2328
+76,2010-03-08 15:15:00,Original test partition,112362,3015,False,True,1,Isolated Flag (Statistical_Baseline),754.0,True,2339
+77,2010-03-08 15:30:00,Original test partition,112363,3016,False,True,3,Three-Way Multi-Model Consensus,754.25,True,2339
+78,2010-03-08 15:45:00,Original test partition,112364,3017,False,True,1,Isolated Flag (Isolation_Forest),754.5,True,2339
+79,2010-03-10 06:45:00,Original test partition,112520,3173,False,True,1,Isolated Flag (LSTM_Prediction),793.5,True,2330
+80,2010-03-12 19:00:00,Original test partition,112761,3414,False,True,1,Isolated Flag (LSTM_Prediction),853.75,True,2340
+81,2010-03-13 10:45:00,Original test partition,112824,3477,False,True,1,Isolated Flag (LSTM_Prediction),869.5,True,900
+82,2010-03-13 14:15:00,Original test partition,112838,3491,False,True,3,Three-Way Multi-Model Consensus,873.0,True,900
+83,2010-03-13 15:15:00,Original test partition,112842,3495,False,True,1,Isolated Flag (LSTM_Autoencoder),874.0,True,900
+84,2010-03-13 17:15:00,Original test partition,112850,3503,False,True,3,Three-Way Multi-Model Consensus,876.0,True,900
+85,2010-03-13 17:30:00,Original test partition,112851,3504,False,True,1,Isolated Flag (LSTM_Autoencoder),876.25,True,900
+86,2010-03-13 17:45:00,Original test partition,112852,3505,False,True,1,Isolated Flag (LSTM_Autoencoder),876.5,True,900
+87,2010-03-13 18:00:00,Original test partition,112853,3506,False,True,3,Three-Way Multi-Model Consensus,876.75,True,900
+88,2010-03-15 19:15:00,Original test partition,113050,3703,False,True,1,Isolated Flag (LSTM_Prediction),926.0,True,2340
+89,2010-03-21 16:30:00,Original test partition,113485,4138,False,True,1,Isolated Flag (LSTM_Prediction),1067.25,True,900
+90,2010-03-21 16:45:00,Original test partition,113486,4139,False,True,1,Isolated Flag (LSTM_Autoencoder),1067.5,True,900
+91,2010-03-21 20:45:00,Original test partition,113502,4155,False,True,2,Two-Model Agreement,1071.5,True,900
+92,2010-03-27 18:30:00,Original test partition,114069,4722,False,True,3,Three-Way Multi-Model Consensus,1213.25,True,900
+93,2010-03-27 18:45:00,Original test partition,114070,4723,False,True,1,Isolated Flag (Isolation_Forest),1213.5,True,900
+94,2010-03-27 19:00:00,Original test partition,114071,4724,False,True,1,Isolated Flag (LSTM_Autoencoder),1213.75,True,900
+95,2010-03-27 19:15:00,Original test partition,114072,4725,False,True,1,Isolated Flag (LSTM_Autoencoder),1214.0,True,900
+96,2010-03-27 19:30:00,Original test partition,114073,4726,False,True,1,Isolated Flag (LSTM_Autoencoder),1214.25,True,900
+97,2010-03-28 10:45:00,Original test partition,114134,4787,False,True,2,Two-Model Agreement,1229.5,True,900
+98,2010-03-28 11:00:00,Original test partition,114135,4788,False,True,1,Isolated Flag (LSTM_Autoencoder),1229.75,True,900
+99,2010-03-28 14:00:00,Original test partition,114147,4800,False,True,1,Isolated Flag (LSTM_Prediction),1232.75,True,900
+100,2010-03-28 14:15:00,Original test partition,114148,4801,False,True,1,Isolated Flag (LSTM_Autoencoder),1233.0,True,900
+101,2010-03-28 14:45:00,Original test partition,114150,4803,False,True,1,Isolated Flag (LSTM_Autoencoder),1233.5,True,900
+102,2010-03-28 19:30:00,Original test partition,114169,4822,False,True,1,Isolated Flag (LSTM_Prediction),1238.25,True,900
+103,2010-03-28 22:15:00,Original test partition,114180,4833,False,True,1,Isolated Flag (LSTM_Prediction),1241.0,True,900
+104,2010-03-30 07:00:00,Original test partition,114311,4964,False,True,1,Isolated Flag (LSTM_Prediction),1273.75,True,2328
+105,2010-03-31 12:45:00,Original test partition,114430,5083,False,True,1,Isolated Flag (LSTM_Prediction),1303.5,True,2328
+106,2010-03-31 13:00:00,Original test partition,114431,5084,False,True,1,Isolated Flag (Statistical_Baseline),1303.75,True,2331
+107,2010-04-01 19:30:00,Original test partition,114553,5206,False,True,1,Isolated Flag (LSTM_Prediction),1334.25,True,2352
+108,2010-04-01 22:00:00,Original test partition,114563,5216,False,True,1,Isolated Flag (LSTM_Prediction),1336.75,True,2352
+109,2010-04-05 10:30:00,Original test partition,114901,5554,False,True,1,Isolated Flag (LSTM_Prediction),1421.25,True,2340
+110,2010-04-05 10:45:00,Original test partition,114902,5555,False,True,1,Isolated Flag (LSTM_Autoencoder),1421.5,True,2340
+111,2010-04-05 11:45:00,Original test partition,114906,5559,False,True,1,Isolated Flag (LSTM_Autoencoder),1422.5,True,2340
+112,2010-04-05 12:30:00,Original test partition,114909,5562,False,True,1,Isolated Flag (LSTM_Autoencoder),1423.25,True,2340
+113,2010-04-05 12:45:00,Original test partition,114910,5563,False,True,1,Isolated Flag (LSTM_Autoencoder),1423.5,True,2340
+114,2010-04-11 20:30:00,Original test partition,115517,6170,False,True,2,Two-Model Agreement,1575.25,True,936
+115,2010-04-11 20:45:00,Original test partition,115518,6171,False,True,4,Four-Model Consensus Candidate Anomaly,1575.5,True,936
+116,2010-04-11 21:00:00,Original test partition,115519,6172,False,True,3,Three-Way Multi-Model Consensus,1575.75,True,936
+117,2010-04-11 21:15:00,Original test partition,115520,6173,False,True,2,Two-Model Agreement,1576.0,True,936
+118,2010-04-11 21:30:00,Original test partition,115521,6174,False,True,2,Two-Model Agreement,1576.25,True,936
+119,2010-04-11 21:45:00,Original test partition,115522,6175,False,True,1,Isolated Flag (LSTM_Autoencoder),1576.5,True,936
+120,2010-04-14 06:45:00,Original test partition,115750,6403,False,True,1,Isolated Flag (LSTM_Prediction),1633.5,True,2340
+121,2010-04-14 12:15:00,Original test partition,115772,6425,False,True,1,Isolated Flag (LSTM_Autoencoder),1639.0,True,2340
+122,2010-04-14 13:15:00,Original test partition,115776,6429,False,True,1,Isolated Flag (LSTM_Prediction),1640.0,True,2343
+123,2010-04-14 13:30:00,Original test partition,115777,6430,False,True,1,Isolated Flag (LSTM_Autoencoder),1640.25,True,2343
+124,2010-04-14 14:30:00,Original test partition,115781,6434,False,True,1,Isolated Flag (LSTM_Prediction),1641.25,True,2347
+125,2010-04-19 17:30:00,Original test partition,116273,6926,False,True,2,Two-Model Agreement,1764.25,True,2352
+126,2010-04-26 15:00:00,Original test partition,116935,7588,False,True,1,Isolated Flag (LSTM_Prediction),1929.75,True,2351
+127,2010-04-26 17:00:00,Original test partition,116943,7596,False,True,1,Isolated Flag (LSTM_Autoencoder),1931.75,True,2352
+128,2010-05-01 12:30:00,Original test partition,117405,8058,False,True,1,Isolated Flag (LSTM_Prediction),2047.25,True,888
+129,2010-05-01 12:45:00,Original test partition,117406,8059,False,True,1,Isolated Flag (LSTM_Autoencoder),2047.5,True,888
+130,2010-05-01 14:15:00,Original test partition,117412,8065,False,True,1,Isolated Flag (LSTM_Prediction),2049.0,True,888
+131,2010-05-02 12:15:00,Original test partition,117500,8153,False,True,1,Isolated Flag (LSTM_Prediction),2071.0,True,888
+132,2010-05-02 12:30:00,Original test partition,117501,8154,False,True,2,Two-Model Agreement,2071.25,True,888
+133,2010-05-02 13:30:00,Original test partition,117505,8158,False,True,3,Three-Way Multi-Model Consensus,2072.25,True,888
+134,2010-05-02 19:00:00,Original test partition,117527,8180,False,True,2,Two-Model Agreement,2077.75,True,888
+135,2010-05-02 19:15:00,Original test partition,117528,8181,False,True,1,Isolated Flag (Isolation_Forest),2078.0,True,888
+136,2010-05-02 19:30:00,Original test partition,117529,8182,False,True,1,Isolated Flag (Isolation_Forest),2078.25,True,888
+137,2010-05-02 22:00:00,Original test partition,117539,8192,False,True,1,Isolated Flag (LSTM_Autoencoder),2080.75,True,888
+138,2010-05-02 22:15:00,Original test partition,117540,8193,False,True,1,Isolated Flag (LSTM_Autoencoder),2081.0,True,888
+139,2010-05-05 21:00:00,Original test partition,117823,8476,False,True,1,Isolated Flag (LSTM_Prediction),2151.75,True,2340
+140,2010-05-08 09:30:00,Original test partition,118065,8718,False,True,1,Isolated Flag (LSTM_Prediction),2212.25,True,888
+141,2010-05-08 21:00:00,Original test partition,118111,8764,False,True,1,Isolated Flag (LSTM_Prediction),2223.75,True,888
+142,2010-05-09 20:30:00,Original test partition,118205,8858,False,True,1,Isolated Flag (LSTM_Prediction),2247.25,True,888
+143,2010-05-09 20:45:00,Original test partition,118206,8859,False,True,2,Two-Model Agreement,2247.5,True,888
+144,2010-05-09 21:00:00,Original test partition,118207,8860,False,True,1,Isolated Flag (Isolation_Forest),2247.75,True,888
+145,2010-05-09 21:45:00,Original test partition,118210,8863,False,True,1,Isolated Flag (LSTM_Autoencoder),2248.5,True,888
+146,2010-05-09 22:00:00,Original test partition,118211,8864,False,True,1,Isolated Flag (LSTM_Autoencoder),2248.75,True,888
+147,2010-05-12 14:15:00,Original test partition,118468,9121,False,True,2,Two-Model Agreement,2313.0,True,2335
+148,2010-05-12 17:00:00,Original test partition,118479,9132,False,True,1,Isolated Flag (LSTM_Prediction),2315.75,True,2340
+149,2010-05-15 20:15:00,Original test partition,118780,9433,False,True,1,Isolated Flag (LSTM_Prediction),2391.0,True,888
+150,2010-05-15 23:30:00,Original test partition,118793,9446,False,True,1,Isolated Flag (Statistical_Baseline),2394.25,True,896
+151,2010-05-15 23:45:00,Original test partition,118794,9447,False,True,1,Isolated Flag (Statistical_Baseline),2394.5,True,896
+152,2010-05-16 14:00:00,Original test partition,118851,9504,False,True,3,Three-Way Multi-Model Consensus,2408.75,True,888
+153,2010-05-16 14:15:00,Original test partition,118852,9505,False,True,2,Two-Model Agreement,2409.0,True,888
+154,2010-05-16 14:30:00,Original test partition,118853,9506,False,True,1,Isolated Flag (LSTM_Autoencoder),2409.25,True,888
+155,2010-05-16 14:45:00,Original test partition,118854,9507,False,True,1,Isolated Flag (LSTM_Autoencoder),2409.5,True,888
+156,2010-05-16 15:00:00,Original test partition,118855,9508,False,True,1,Isolated Flag (LSTM_Autoencoder),2409.75,True,888
+157,2010-05-16 19:00:00,Original test partition,118871,9524,False,True,1,Isolated Flag (LSTM_Prediction),2413.75,True,888
+158,2010-05-19 15:15:00,Original test partition,119144,9797,False,True,1,Isolated Flag (LSTM_Autoencoder),2482.0,True,2339
+159,2010-05-19 16:30:00,Original test partition,119149,9802,False,True,1,Isolated Flag (LSTM_Autoencoder),2483.25,True,2340
+160,2010-05-22 12:00:00,Original test partition,119419,10072,False,True,2,Two-Model Agreement,2550.75,True,888
+161,2010-05-24 10:15:00,Original test partition,119604,10257,False,True,1,Isolated Flag (LSTM_Prediction),2597.0,True,2328
+162,2010-05-24 11:00:00,Original test partition,119607,10260,False,True,1,Isolated Flag (LSTM_Autoencoder),2597.75,True,2328
+163,2010-05-24 16:45:00,Original test partition,119630,10283,False,True,1,Isolated Flag (LSTM_Autoencoder),2603.5,True,2340
+164,2010-05-25 20:15:00,Original test partition,119740,10393,False,True,1,Isolated Flag (LSTM_Autoencoder),2631.0,True,2340
+165,2010-05-25 20:30:00,Original test partition,119741,10394,False,True,1,Isolated Flag (LSTM_Autoencoder),2631.25,True,2340
+166,2010-05-26 13:00:00,Original test partition,119807,10460,False,True,1,Isolated Flag (LSTM_Prediction),2647.75,True,2331
+167,2010-05-26 19:15:00,Original test partition,119832,10485,False,True,1,Isolated Flag (LSTM_Prediction),2654.0,True,2340
+168,2010-05-29 16:45:00,Original test partition,120110,10763,False,True,1,Isolated Flag (LSTM_Autoencoder),2723.5,True,888
+169,2010-06-05 02:30:00,Original test partition,120725,11378,False,True,1,Isolated Flag (LSTM_Autoencoder),2877.25,True,914
+170,2010-06-05 22:30:00,Original test partition,120805,11458,False,True,1,Isolated Flag (LSTM_Prediction),2897.25,True,912
+171,2010-06-05 23:15:00,Original test partition,120808,11461,False,True,1,Isolated Flag (Statistical_Baseline),2898.0,True,916
+172,2010-06-06 00:00:00,Original test partition,120811,11464,False,True,2,Two-Model Agreement,2898.75,True,918
+173,2010-06-06 18:00:00,Original test partition,120883,11536,False,True,1,Isolated Flag (LSTM_Prediction),2916.75,True,912
+174,2010-06-06 18:15:00,Original test partition,120884,11537,False,True,1,Isolated Flag (LSTM_Autoencoder),2917.0,True,912
+175,2010-06-08 09:30:00,Original test partition,121041,11694,False,True,1,Isolated Flag (LSTM_Prediction),2956.25,True,2376
+176,2010-06-08 19:00:00,Original test partition,121079,11732,False,True,1,Isolated Flag (LSTM_Prediction),2965.75,True,2376
+177,2010-06-08 19:45:00,Original test partition,121082,11735,False,True,1,Isolated Flag (LSTM_Autoencoder),2966.5,True,2376
+178,2010-06-09 13:15:00,Original test partition,121152,11805,False,True,1,Isolated Flag (LSTM_Prediction),2984.0,True,2376
+179,2010-06-09 14:00:00,Original test partition,121155,11808,False,True,1,Isolated Flag (LSTM_Autoencoder),2984.75,True,2376
+180,2010-06-09 14:15:00,Original test partition,121156,11809,False,True,1,Isolated Flag (LSTM_Autoencoder),2985.0,True,2376
+181,2010-06-12 15:45:00,Original test partition,121450,12103,False,True,1,Isolated Flag (LSTM_Autoencoder),3058.5,True,912
+182,2010-06-13 10:15:00,Original test partition,121524,12177,False,True,1,Isolated Flag (LSTM_Prediction),3077.0,True,912
+183,2010-06-19 21:30:00,Original test partition,122145,12798,False,True,1,Isolated Flag (LSTM_Prediction),3232.25,True,912
+184,2010-06-19 21:45:00,Original test partition,122146,12799,False,True,1,Isolated Flag (LSTM_Autoencoder),3232.5,True,912
+185,2010-06-20 18:45:00,Original test partition,122230,12883,False,True,2,Two-Model Agreement,3253.5,True,912
+186,2010-06-21 17:30:00,Original test partition,122321,12974,False,True,1,Isolated Flag (LSTM_Prediction),3276.25,True,2376
+187,2010-06-21 18:15:00,Original test partition,122324,12977,False,True,1,Isolated Flag (LSTM_Autoencoder),3277.0,True,2376
+188,2010-06-21 18:45:00,Original test partition,122326,12979,False,True,3,Three-Way Multi-Model Consensus,3277.5,True,2376
+189,2010-06-21 19:00:00,Original test partition,122327,12980,False,True,2,Two-Model Agreement,3277.75,True,2376
+190,2010-06-21 19:15:00,Original test partition,122328,12981,False,True,1,Isolated Flag (LSTM_Autoencoder),3278.0,True,2376
+191,2010-06-21 19:45:00,Original test partition,122330,12983,False,True,1,Isolated Flag (LSTM_Autoencoder),3278.5,True,2376
+192,2010-06-22 18:30:00,Original test partition,122421,13074,False,True,1,Isolated Flag (LSTM_Prediction),3301.25,True,2376
+193,2010-06-23 20:45:00,Original test partition,122526,13179,False,True,1,Isolated Flag (LSTM_Prediction),3327.5,True,2376
+194,2010-06-23 21:00:00,Original test partition,122527,13180,False,True,1,Isolated Flag (LSTM_Prediction),3327.75,True,2376
+195,2010-06-23 21:15:00,Original test partition,122528,13181,False,True,1,Isolated Flag (LSTM_Autoencoder),3328.0,True,2376
+196,2010-06-27 10:00:00,Original test partition,122867,13520,False,True,1,Isolated Flag (LSTM_Autoencoder),3412.75,True,912
+197,2010-06-28 00:15:00,Original test partition,122924,13577,False,True,1,Isolated Flag (LSTM_Autoencoder),3427.0,True,2368
+198,2010-06-29 22:30:00,Original test partition,123109,13762,False,True,1,Isolated Flag (LSTM_Prediction),3473.25,True,2376
+199,2010-06-29 22:45:00,Original test partition,123110,13763,False,True,1,Isolated Flag (LSTM_Autoencoder),3473.5,True,2376
+200,2010-06-29 23:15:00,Original test partition,123112,13765,False,True,1,Isolated Flag (LSTM_Autoencoder),3474.0,True,2372
+201,2010-07-01 00:00:00,Original test partition,123211,13864,False,True,1,Isolated Flag (Statistical_Baseline),3498.75,True,2356
+202,2010-07-01 00:15:00,Original test partition,123212,13865,False,True,1,Isolated Flag (Statistical_Baseline),3499.0,True,2356
+203,2010-07-13 14:30:00,Original test partition,124421,15074,False,True,1,Isolated Flag (LSTM_Prediction),3801.25,True,2352
+204,2010-07-25 23:00:00,Original test partition,125607,16260,False,True,1,Isolated Flag (LSTM_Prediction),4097.75,True,928
+205,2010-08-27 15:30:00,Original test partition,128269,18922,False,True,1,Isolated Flag (LSTM_Prediction),4882.25,True,2352
+206,2010-08-27 15:45:00,Original test partition,128270,18923,False,True,3,Three-Way Multi-Model Consensus,4882.5,True,2352
+207,2010-08-27 16:00:00,Original test partition,128271,18924,False,True,1,Isolated Flag (LSTM_Autoencoder),4882.75,True,2352
+208,2010-08-27 16:15:00,Original test partition,128272,18925,False,True,1,Isolated Flag (LSTM_Autoencoder),4883.0,True,2352
+209,2010-08-27 16:30:00,Original test partition,128273,18926,False,True,1,Isolated Flag (LSTM_Autoencoder),4883.25,True,2352
+210,2010-08-27 17:30:00,Original test partition,128277,18930,False,True,1,Isolated Flag (LSTM_Prediction),4884.25,True,2352
+211,2010-08-27 18:45:00,Original test partition,128282,18935,False,True,2,Two-Model Agreement,4885.5,True,2353
+212,2010-09-06 17:30:00,Original test partition,129237,19890,False,True,1,Isolated Flag (Statistical_Baseline),5124.25,True,2352
+213,2010-09-08 00:30:00,Original test partition,129361,20014,False,True,1,Isolated Flag (LSTM_Autoencoder),5155.25,True,2364
+214,2010-09-09 14:30:00,Original test partition,129513,20166,False,True,1,Isolated Flag (LSTM_Autoencoder),5193.25,True,2352
+215,2010-09-09 19:30:00,Original test partition,129533,20186,False,True,1,Isolated Flag (LSTM_Prediction),5198.25,True,2357
+216,2010-09-12 03:15:00,Original test partition,129756,20409,False,True,1,Isolated Flag (Statistical_Baseline),5254.0,True,948
+217,2010-09-12 13:15:00,Original test partition,129796,20449,False,True,1,Isolated Flag (LSTM_Prediction),5264.0,True,948
+218,2010-09-12 13:30:00,Original test partition,129797,20450,False,True,1,Isolated Flag (LSTM_Autoencoder),5264.25,True,948
+219,2010-09-12 13:45:00,Original test partition,129798,20451,False,True,1,Isolated Flag (LSTM_Autoencoder),5264.5,True,948
+220,2010-09-13 01:00:00,Original test partition,129843,20496,False,True,1,Isolated Flag (LSTM_Autoencoder),5275.75,True,2364
+221,2010-09-17 16:30:00,Original test partition,130289,20942,False,True,1,Isolated Flag (Statistical_Baseline),5387.25,True,2352
+222,2010-09-17 19:00:00,Original test partition,130299,20952,False,True,2,Two-Model Agreement,5389.75,True,2357
+223,2010-09-17 20:45:00,Original test partition,130306,20959,False,True,1,Isolated Flag (LSTM_Prediction),5391.5,True,2361
+224,2010-09-17 21:00:00,Original test partition,130307,20960,False,True,1,Isolated Flag (LSTM_Autoencoder),5391.75,True,2364
+225,2010-09-17 21:30:00,Original test partition,130309,20962,False,True,1,Isolated Flag (LSTM_Autoencoder),5392.25,True,2364
+226,2010-09-22 10:45:00,Original test partition,130746,21399,False,True,1,Isolated Flag (LSTM_Prediction),5501.5,True,2352
+227,2010-09-22 11:00:00,Original test partition,130747,21400,False,True,1,Isolated Flag (LSTM_Autoencoder),5501.75,True,2352
+228,2010-09-28 19:00:00,Original test partition,131011,21664,False,True,1,Isolated Flag (LSTM_Prediction),5653.75,True,2357
+229,2010-10-02 20:15:00,Original test partition,131400,22053,False,True,1,Isolated Flag (LSTM_Prediction),5751.0,True,936
+230,2010-10-02 20:30:00,Original test partition,131401,22054,False,True,2,Two-Model Agreement,5751.25,True,936
+231,2010-10-02 20:45:00,Original test partition,131402,22055,False,True,1,Isolated Flag (Isolation_Forest),5751.5,True,936
+232,2010-10-02 21:15:00,Original test partition,131404,22057,False,True,1,Isolated Flag (Isolation_Forest),5752.0,True,936
+233,2010-10-03 11:30:00,Original test partition,131461,22114,False,True,1,Isolated Flag (Isolation_Forest),5766.25,True,936
+234,2010-10-10 19:00:00,Original test partition,132163,22816,False,True,1,Isolated Flag (LSTM_Prediction),5941.75,True,936
+235,2010-10-10 21:00:00,Original test partition,132171,22824,False,True,1,Isolated Flag (Isolation_Forest),5943.75,True,936
+236,2010-10-11 19:15:00,Original test partition,132260,22913,False,True,3,Three-Way Multi-Model Consensus,5966.0,True,2340
+237,2010-10-11 19:30:00,Original test partition,132261,22914,False,True,1,Isolated Flag (LSTM_Autoencoder),5966.25,True,2340
+238,2010-10-11 21:30:00,Original test partition,132269,22922,False,True,2,Two-Model Agreement,5968.25,True,2340
+239,2010-10-12 18:30:00,Original test partition,132353,23006,False,True,1,Isolated Flag (LSTM_Prediction),5989.25,True,2340
+240,2010-10-12 18:45:00,Original test partition,132354,23007,False,True,1,Isolated Flag (Statistical_Baseline),5989.5,True,2340
+241,2010-10-12 19:00:00,Original test partition,132355,23008,False,True,1,Isolated Flag (LSTM_Autoencoder),5989.75,True,2340
+242,2010-10-13 06:45:00,Original test partition,132402,23055,False,True,1,Isolated Flag (LSTM_Prediction),6001.5,True,2340
+243,2010-10-14 18:45:00,Original test partition,132546,23199,False,True,2,Two-Model Agreement,6037.5,True,2340
+244,2010-10-14 19:00:00,Original test partition,132547,23200,False,True,1,Isolated Flag (LSTM_Autoencoder),6037.75,True,2340
+245,2010-10-14 19:15:00,Original test partition,132548,23201,False,True,1,Isolated Flag (LSTM_Autoencoder),6038.0,True,2340
+246,2010-10-14 19:30:00,Original test partition,132549,23202,False,True,1,Isolated Flag (LSTM_Autoencoder),6038.25,True,2340
+247,2010-10-14 23:00:00,Original test partition,132563,23216,False,True,1,Isolated Flag (LSTM_Prediction),6041.75,True,2340
+248,2010-10-14 23:15:00,Original test partition,132564,23217,False,True,1,Isolated Flag (LSTM_Autoencoder),6042.0,True,2340
+249,2010-10-17 19:30:00,Original test partition,132837,23490,False,True,1,Isolated Flag (LSTM_Prediction),6110.25,True,936
+250,2010-10-18 09:15:00,Original test partition,132892,23545,False,True,3,Three-Way Multi-Model Consensus,6124.0,True,2340
+251,2010-10-18 09:30:00,Original test partition,132893,23546,False,True,1,Isolated Flag (LSTM_Autoencoder),6124.25,True,2340
+252,2010-10-18 10:15:00,Original test partition,132896,23549,False,True,1,Isolated Flag (LSTM_Autoencoder),6125.0,True,2340
+253,2010-10-18 10:45:00,Original test partition,132898,23551,False,True,2,Two-Model Agreement,6125.5,True,2340
+254,2010-10-18 12:00:00,Original test partition,132903,23556,False,True,1,Isolated Flag (Statistical_Baseline),6126.75,True,2340
+255,2010-10-18 13:30:00,Original test partition,132909,23562,False,True,3,Three-Way Multi-Model Consensus,6128.25,True,2340
+256,2010-10-18 13:45:00,Original test partition,132910,23563,False,True,1,Isolated Flag (LSTM_Autoencoder),6128.5,True,2340
+257,2010-10-18 14:00:00,Original test partition,132911,23564,False,True,1,Isolated Flag (LSTM_Autoencoder),6128.75,True,2340
+258,2010-10-18 18:30:00,Original test partition,132929,23582,False,True,3,Three-Way Multi-Model Consensus,6133.25,True,2340
+259,2010-10-18 18:45:00,Original test partition,132930,23583,False,True,3,Three-Way Multi-Model Consensus,6133.5,True,2340
+260,2010-10-18 19:00:00,Original test partition,132931,23584,False,True,2,Two-Model Agreement,6133.75,True,2340
+261,2010-10-19 06:45:00,Original test partition,132978,23631,False,True,1,Isolated Flag (LSTM_Prediction),6145.5,True,2340
+262,2010-10-19 18:00:00,Original test partition,133023,23676,False,True,2,Two-Model Agreement,6156.75,True,2340
+263,2010-10-19 18:15:00,Original test partition,133024,23677,False,True,1,Isolated Flag (Statistical_Baseline),6157.0,True,2340
+264,2010-10-20 18:45:00,Original test partition,133122,23775,False,True,1,Isolated Flag (LSTM_Prediction),6181.5,True,2340
+265,2010-10-21 06:45:00,Original test partition,133170,23823,False,True,1,Isolated Flag (LSTM_Prediction),6193.5,True,2340
+266,2010-10-23 17:00:00,Original test partition,133403,24056,False,True,1,Isolated Flag (LSTM_Autoencoder),6251.75,True,936
+267,2010-10-23 17:15:00,Original test partition,133404,24057,False,True,3,Three-Way Multi-Model Consensus,6252.0,True,936
+268,2010-10-23 21:00:00,Original test partition,133419,24072,False,True,1,Isolated Flag (LSTM_Prediction),6255.75,True,936
+269,2010-10-24 12:15:00,Original test partition,133480,24133,False,True,1,Isolated Flag (LSTM_Prediction),6271.0,True,936
+270,2010-10-24 15:30:00,Original test partition,133493,24146,False,True,1,Isolated Flag (LSTM_Autoencoder),6274.25,True,936
+271,2010-10-24 18:45:00,Original test partition,133506,24159,False,True,1,Isolated Flag (LSTM_Prediction),6277.5,True,936
+272,2010-10-26 09:00:00,Original test partition,133659,24312,False,True,1,Isolated Flag (LSTM_Prediction),6315.75,True,2340
+273,2010-10-26 09:45:00,Original test partition,133662,24315,False,True,1,Isolated Flag (LSTM_Autoencoder),6316.5,True,2340
+274,2010-10-26 11:15:00,Original test partition,133668,24321,False,True,1,Isolated Flag (LSTM_Prediction),6318.0,True,2340
+275,2010-10-26 11:30:00,Original test partition,133669,24322,False,True,1,Isolated Flag (Isolation_Forest),6318.25,True,2340
+276,2010-10-31 05:15:00,Original test partition,134124,24777,False,True,1,Isolated Flag (Statistical_Baseline),6432.0,True,936
+277,2010-10-31 06:45:00,Original test partition,134130,24783,False,True,1,Isolated Flag (LSTM_Prediction),6433.5,True,936
+278,2010-10-31 07:00:00,Original test partition,134131,24784,False,True,1,Isolated Flag (LSTM_Autoencoder),6433.75,True,936
+279,2010-11-04 08:15:00,Original test partition,134520,25173,False,True,3,Three-Way Multi-Model Consensus,6531.0,True,2496
+280,2010-11-04 08:30:00,Original test partition,134521,25174,False,True,4,Four-Model Consensus Candidate Anomaly,6531.25,True,2496
+281,2010-11-04 08:45:00,Original test partition,134522,25175,False,True,2,Two-Model Agreement,6531.5,True,2496
+282,2010-11-04 09:00:00,Original test partition,134523,25176,False,True,1,Isolated Flag (LSTM_Autoencoder),6531.75,True,2496
+283,2010-11-04 09:15:00,Original test partition,134524,25177,False,True,1,Isolated Flag (LSTM_Autoencoder),6532.0,True,2496
+284,2010-11-04 09:30:00,Original test partition,134525,25178,False,True,1,Isolated Flag (LSTM_Autoencoder),6532.25,True,2496
+285,2010-11-04 10:00:00,Original test partition,134527,25180,False,True,3,Three-Way Multi-Model Consensus,6532.75,True,2496
+286,2010-11-04 11:00:00,Original test partition,134531,25184,False,True,1,Isolated Flag (LSTM_Prediction),6533.75,True,2496
+287,2010-11-04 11:30:00,Original test partition,134533,25186,False,True,1,Isolated Flag (LSTM_Autoencoder),6534.25,True,2496
+288,2010-11-04 12:30:00,Original test partition,134537,25190,False,True,1,Isolated Flag (LSTM_Prediction),6535.25,True,2496
+289,2010-11-04 12:45:00,Original test partition,134538,25191,False,True,1,Isolated Flag (LSTM_Autoencoder),6535.5,True,2496
+290,2010-11-04 13:30:00,Original test partition,134541,25194,False,True,3,Three-Way Multi-Model Consensus,6536.25,True,2496
+291,2010-11-04 13:45:00,Original test partition,134542,25195,False,True,1,Isolated Flag (LSTM_Autoencoder),6536.5,True,2496
+292,2010-11-04 14:00:00,Original test partition,134543,25196,False,True,1,Isolated Flag (LSTM_Autoencoder),6536.75,True,2496
+293,2010-11-04 14:15:00,Original test partition,134544,25197,False,True,1,Isolated Flag (LSTM_Autoencoder),6537.0,True,2496
+294,2010-11-04 19:15:00,Original test partition,134564,25217,False,True,3,Three-Way Multi-Model Consensus,6542.0,True,2496
+295,2010-11-04 19:30:00,Original test partition,134565,25218,False,True,2,Two-Model Agreement,6542.25,True,2496
+296,2010-11-04 20:15:00,Original test partition,134568,25221,False,True,3,Three-Way Multi-Model Consensus,6543.0,True,2496
+297,2010-11-04 20:30:00,Original test partition,134569,25222,False,True,2,Two-Model Agreement,6543.25,True,2496
+298,2010-11-04 20:45:00,Original test partition,134570,25223,False,True,1,Isolated Flag (Isolation_Forest),6543.5,True,2496
+299,2010-11-04 21:15:00,Original test partition,134572,25225,False,True,1,Isolated Flag (Isolation_Forest),6544.0,True,2496
+300,2010-11-05 07:00:00,Original test partition,134611,25264,False,True,1,Isolated Flag (LSTM_Prediction),6553.75,True,2496
+301,2010-11-06 11:15:00,Original test partition,134724,25377,False,True,1,Isolated Flag (LSTM_Prediction),6582.0,True,996
+302,2010-11-07 09:30:00,Original test partition,134813,25466,False,True,1,Isolated Flag (LSTM_Prediction),6604.25,True,996
+303,2010-11-10 10:00:00,Original test partition,135103,25756,False,True,3,Three-Way Multi-Model Consensus,6676.75,True,2496
+304,2010-11-10 10:15:00,Original test partition,135104,25757,False,True,2,Two-Model Agreement,6677.0,True,2496
+305,2010-11-10 11:00:00,Original test partition,135107,25760,False,True,1,Isolated Flag (LSTM_Autoencoder),6677.75,True,2496
+306,2010-11-10 11:15:00,Original test partition,135108,25761,False,True,3,Three-Way Multi-Model Consensus,6678.0,True,2496
+307,2010-11-11 15:30:00,Original test partition,135221,25874,False,True,1,Isolated Flag (Statistical_Baseline),6706.25,True,2496
+308,2010-11-11 16:45:00,Original test partition,135226,25879,False,True,2,Two-Model Agreement,6707.5,True,2496
+309,2010-11-13 16:30:00,Original test partition,135417,26070,False,True,1,Isolated Flag (Statistical_Baseline),6755.25,True,999
+310,2010-11-14 15:00:00,Original test partition,135507,26160,False,True,1,Isolated Flag (LSTM_Prediction),6777.75,True,996
+311,2010-11-14 15:15:00,Original test partition,135508,26161,False,True,1,Isolated Flag (LSTM_Autoencoder),6778.0,True,996
+312,2010-11-14 16:00:00,Original test partition,135511,26164,False,True,1,Isolated Flag (Isolation_Forest),6778.75,True,999
+313,2010-11-15 07:45:00,Original test partition,135574,26227,False,True,1,Isolated Flag (LSTM_Prediction),6794.5,True,2496
+314,2010-11-15 08:45:00,Original test partition,135578,26231,False,True,1,Isolated Flag (LSTM_Autoencoder),6795.5,True,2496
+315,2010-11-15 12:00:00,Original test partition,135591,26244,False,True,3,Three-Way Multi-Model Consensus,6798.75,True,2496
+316,2010-11-15 12:15:00,Original test partition,135592,26245,False,True,2,Two-Model Agreement,6799.0,True,2496
+317,2010-11-15 12:45:00,Original test partition,135594,26247,False,True,1,Isolated Flag (LSTM_Autoencoder),6799.5,True,2496
+318,2010-11-18 06:45:00,Original test partition,135858,26511,False,True,1,Isolated Flag (LSTM_Prediction),6865.5,True,2496
+319,2010-11-18 18:15:00,Original test partition,135904,26557,False,True,1,Isolated Flag (LSTM_Prediction),6877.0,True,2496
+320,2010-11-20 18:15:00,Original test partition,136096,26749,False,True,3,Three-Way Multi-Model Consensus,6925.0,True,1007
+321,2010-11-20 18:30:00,Original test partition,136097,26750,False,True,3,Three-Way Multi-Model Consensus,6925.25,True,1007
+322,2010-11-20 18:45:00,Original test partition,136098,26751,False,True,3,Three-Way Multi-Model Consensus,6925.5,True,1007
+323,2010-11-20 19:00:00,Original test partition,136099,26752,False,True,2,Two-Model Agreement,6925.75,True,1008
+324,2010-11-20 19:15:00,Original test partition,136100,26753,False,True,2,Two-Model Agreement,6926.0,True,1008
+325,2010-11-22 18:15:00,Original test partition,136288,26941,False,True,1,Isolated Flag (LSTM_Prediction),6973.0,True,2496
+326,2010-11-22 18:30:00,Original test partition,136289,26942,False,True,2,Two-Model Agreement,6973.25,True,2496
+327,2010-11-22 19:30:00,Original test partition,136293,26946,False,True,1,Isolated Flag (LSTM_Autoencoder),6974.25,True,2496
+328,2010-11-23 14:00:00,Original test partition,136367,27020,False,True,1,Isolated Flag (LSTM_Autoencoder),6992.75,True,2496
+329,2010-11-23 15:00:00,Original test partition,136371,27024,False,True,1,Isolated Flag (LSTM_Autoencoder),6993.75,True,2496
+330,2010-11-24 07:45:00,Original test partition,136438,27091,False,True,1,Isolated Flag (LSTM_Prediction),7010.5,True,2496
+331,2010-11-24 08:15:00,Original test partition,136440,27093,False,True,1,Isolated Flag (LSTM_Autoencoder),7011.0,True,2496
+332,2010-11-26 06:45:00,Original test partition,136626,27279,False,True,1,Isolated Flag (LSTM_Prediction),7057.5,True,2496

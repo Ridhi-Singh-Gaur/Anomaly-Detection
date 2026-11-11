@@ -1,0 +1,46 @@
+[2026-11-07 20:37:45] [INFO] ================================================================================
+[2026-11-07 20:37:45] [INFO] STARTING EXPERIMENT 6.2: TARGETED EXPLANATION QUALITY REMEDIATION
+[2026-11-07 20:37:45] [INFO] Experiment ID: EXP-PHASE3-XAI-06B
+[2026-11-07 20:37:45] [INFO] Execution Timestamp: 2026-11-07 20:37:45
+[2026-11-07 20:37:45] [INFO] ================================================================================
+[2026-11-07 20:37:45] [INFO] Master manuscript freeze verified: complete_ieee_paper.md (122,229 bytes).
+[2026-11-07 20:37:45] [INFO] 
+[Step 1] Verifying baseline backups in outputs_backup_phase3/...
+[2026-11-07 20:37:45] [INFO]   Backup explanations.json verified: 767,346 bytes
+[2026-11-07 20:37:45] [INFO]   Backup contextual_anomalies.csv verified: 299,464 bytes
+[2026-11-07 20:37:45] [INFO] 
+[Step 2] Loading baseline explanation and dataset records...
+[2026-11-07 20:37:45] [INFO]   Loaded 333 baseline explanations from backup.
+[2026-11-07 20:37:51] [INFO]   Features loaded: Train = 109,347 rows, Test = 27,337 rows.
+[2026-11-07 20:37:52] [INFO]   Reference 200-tree SHAP matrix loaded: 433 rows.
+[2026-11-07 20:37:52] [INFO] 
+[Step 3] Regenerating all 333 candidate anomaly explanations...
+[2026-11-07 20:37:57] [INFO]   Regenerated 333 explanations.
+[2026-11-07 20:37:57] [INFO]   Unmetered load hypotheses remediated: 73 (expected 73)
+[2026-11-07 20:37:57] [INFO]   SHAP directional attributions remediated: 5 (expected 5)
+[2026-11-07 20:37:57] [INFO] 
+[Step 4] Updating active outputs (explanations.json, contextual_anomalies.csv, xai_execution_report.md)...
+[2026-11-07 20:37:57] [INFO]   Saved active explanations.json: 774,367 bytes
+[2026-11-07 20:37:57] [INFO]   Saved active contextual_anomalies.csv: 306,616 bytes
+[2026-11-07 20:37:57] [INFO]   Updated showcase diagnostic in xai_execution_report.md
+[2026-11-07 20:37:57] [INFO]   Saved comparison CSV: before_after_explanation_comparison.csv (333 rows)
+[2026-11-07 20:37:57] [INFO] 
+[Step 5] Executing 5-dimension semantic audit on remediated explanations...
+[2026-11-07 20:38:04] [INFO] 
+Audit Dimension Verification Summary:
+[2026-11-07 20:38:04] [INFO]   audit_a_record_completeness       : PASS = 333, WARNING =   0, FAIL =   0
+[2026-11-07 20:38:04] [INFO]   audit_b_shap_directional          : PASS = 333, WARNING =   0, FAIL =   0
+[2026-11-07 20:38:04] [INFO]   audit_c_consensus_consistency     : PASS = 333, WARNING =   0, FAIL =   0
+[2026-11-07 20:38:04] [INFO]   audit_d_contextual_reference      : PASS = 333, WARNING =   0, FAIL =   0
+[2026-11-07 20:38:04] [INFO]   audit_e_scientific_validity       : PASS = 333, WARNING =   0, FAIL =   0
+[2026-11-07 20:38:04] [INFO] 
+Overall Remediated Status:
+[2026-11-07 20:38:04] [INFO]   PASS:    333 / 333 (100.0%)
+[2026-11-07 20:38:04] [INFO]   WARNING:   0 / 333 (0.0%)
+[2026-11-07 20:38:04] [INFO]   FAIL:      0 / 333 (0.0%)
+[2026-11-07 20:38:04] [INFO]   Saved summary JSON: semantic_audit_summary.json
+[2026-11-07 20:38:04] [INFO] Master manuscript freeze verified: complete_ieee_paper.md (122,229 bytes).
+[2026-11-07 20:38:04] [INFO] 
+================================================================================
+[2026-11-07 20:38:04] [INFO] EXPERIMENT 6.2 REMEDIATION COMPLETED SUCCESSFULLY. ALL CONSTRAINTS SATISFIED.
+[2026-11-07 20:38:04] [INFO] ================================================================================
